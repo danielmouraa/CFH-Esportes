@@ -1,31 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<link type="/images/x-icon" rel="icon" href="">
-<meta content="" name="description">
-<meta content="" name="keywords">
-<meta content="Tark" name="author">
-<meta content="Tark" name="generator">
-<meta content="" name="url">
-<meta content="CFH" name="company">
-<meta content="1" name="revisit-after">
-<title>CFH &raquo; Home</title>
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="http://www.talk2.com.br" />
+		<link rel="shortcut icon" href="images/ico/favicon.ico" type="image/x-icon" />
+		<link type="text/css" rel="stylesheet" href="styles/comum.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="styles/estrutura.css" media="screen" />
+		<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="styles/ie7.css" media="screen" /><![endif]-->
+	</head>
 
-<!--[if lt IE 9]>
-<script src="js/plugins/html5.js"></script>
-< ![endif]-->
-<script type="text/javascript" language="javascript" src="js/plugins/jQuery.v1.8.2.js"></script>
-<script type="text/javascript" language="javascript" src="js/functions.js"></script>
-
-<link type="text/css" rel="stylesheet" href="css/setFonts/setFonts.css" />
-<link type="text/css" rel="stylesheet" href="css/inherit.css" />
-<link type="text/css" rel="stylesheet" href="css/general.css" />
-
-</head>
-
-<body>
-    <header>
-        
-    </header>
+		<body data-role="<?php if( isset($data_page) && $data_page == "home" ) { echo "home"; } else { echo "internas"; } ?>" data-page="<?php if(isset($data_page)) { echo $data_page; } ?>">
+		<header>
+			
+		</header>
