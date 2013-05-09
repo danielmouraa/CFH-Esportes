@@ -1,0 +1,255 @@
+/**
+* Arquivo responsavel pelo estilo do site CFH
+*
+* @author: Mateus Moura mateus[at]tark[dot]com[dot]br
+* @date: 01/05/2013
+* @Profile: http://migre.me/3WFRy
+*
+* Copyright(c) Todos os direitos reservados a TARK
+*/ 
+
+/* LESS
+	>> Funções
+______________ */
+
+
+
+/* LESS 
+	>> Variáveis
+________________ */
+
+@white-color: #fff;
+@letter-color: #832e4e;
+@gray-color: #575757;
+
+/* --------------- */
+
+/* INHERIT STYLES
+_________________ */
+
+*{
+	font-family:"MyriadPro-Regular";
+	margin: 0;
+	padding: 0;
+}
+*::-moz-selection{
+	background: none repeat scroll 0 0 #832e4e;
+    color: @white-color;
+    text-shadow: none;
+}
+*::selection{
+	background: none repeat scroll 0 0 #832e4e;
+    color: @white-color;
+    text-shadow: none;
+}
+*::-webkit-selection{
+	background: none repeat scroll 0 0 #832e4e;
+    color: @white-color;
+    text-shadow: none;    
+}
+a:hover{
+	text-decoration: underline;		
+}
+a{
+	text-decoration:none;
+}
+body{
+	background: #eaeae7 url("../img/bg/bg_general.png");
+}
+.clear{
+	clear: both;
+}
+main{
+	display: block;
+}
+selector{
+	text-transform: uppercase;
+}
+selector{
+	overflow: hidden;
+}
+header h1
+, header nav.top ul li
+, header nav.category ul li
+, footer h2
+, footer div.contacts{
+	float: left;
+}
+header div.social
+, header nav.top
+, header nav.category{
+	float: right;
+}
+fieldset{
+	border:none;
+}
+legend{
+	display: none;
+}
+
+/* FONT-SIZE 
+____________ */
+
+selector{
+	font-size: 12px;
+}
+footer div.contacts span
+, footer div.contacts span a{
+	font-size: 13px;
+}
+p, strong, span, input, textarea, a, label{
+	font-size: 16px;
+}
+h6{
+	font-size: 18px;
+}
+h5
+, header nav.category ul li a
+, footer div.contacts p{
+	font-size: 20px;
+}
+h4{
+	font-size: 22px;
+}
+h3{
+	font-size: 26px;
+}
+h2{
+	font-size: 30px;
+}
+
+/* FONT-FAMILY 
+______________ */
+
+header nav.top ul li a{
+	font-family: "centabel_bookcentabel_book";
+}
+selector{
+	font-family: "dancing_scriptregular";
+}
+selector{
+	font-family: "MyriadPro-It";
+}
+
+/* COLOR
+________ */
+
+selector{
+	color: @white-color;
+}
+selector{
+	color: #000;
+}
+header nav.top ul li a
+, header nav.category ul li a{
+	color: @letter-color;
+}
+footer div.contacts p
+, footer div.contacts span
+, footer div.contacts span a{
+	color: @gray-color;
+}
+
+
+/* BUTTONS
+__________ */
+
+
+
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer{
+	overflow: hidden;
+	position: relative;
+}
+.jspPane{
+	position: absolute;
+}
+.jspVerticalBar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+}
+.jspHorizontalBar{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+}
+.jspVerticalBar *
+, .jspHorizontalBar *{
+	margin: 0;
+	padding: 0;
+}
+.jspCap{
+	display: none;
+}
+.jspHorizontalBar .jspCap{
+	float: left;
+}
+.jspTrack{
+	background: #000;
+	position: relative;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+ 	border-radius: 3px;
+}
+.jspDrag{
+	background: url("../img/bg/bg_scroll_center.png") no-repeat left top;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.jspHorizontalBar .jspTrack
+, .jspHorizontalBar .jspDrag{
+	float: left;
+	height: 100%;
+}
+.jspArrow{
+	background: url("../img/bg/bg_scroll_arrows.png") no-repeat left top transparent;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+.jspArrowUp{
+	background-position: left top;
+	margin-bottom: 3px;
+}
+.jspArrowDown{
+	background-position: left bottom;
+	margin-top: 3px;
+}
+.jspArrow.jspDisabled{
+	cursor: default;
+	opacity: 0.6;
+}
+.jspVerticalBar .jspArrow{
+	height: 6px;
+}
+.jspHorizontalBar .jspArrow{
+	width: 5px;
+	float: left;
+	height: 100%;
+}
+.jspVerticalBar .jspArrow:focus{
+	outline: none;
+}
+.jspCorner{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{
+	margin: 0 -3px 0 0;
+}
