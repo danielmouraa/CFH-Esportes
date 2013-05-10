@@ -13,7 +13,8 @@ body {
 	color: #;
 	font-size: 62.5%;
 	font-family: arial, verdana, helvetica, sans-serif;
-	background: url(../images/bkg/) no-repeat;
+	/*	background: url(../images/bkg/) no-repeat;*/
+	background-color: #3a5182;
 }
 
 legend { display: none; }
@@ -26,6 +27,15 @@ article, aside, footer { display: block; }
 
 main {
 	
+}
+
+header,
+main,
+footer {
+	width: 940px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
 }
 
 /* Modais */
