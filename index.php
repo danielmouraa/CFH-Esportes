@@ -4,13 +4,14 @@
 ?>
 
 		<main>
-			<section class="destaque-home">
+			<section id="destaque-home">
 				<ul>
 					<li><a href="#this"><img src="images/dtq/destaque-01.png" alt="" /></a></li>
 					<li><a href="#this"><img src="images/dtq/destaque-01.png" alt="" /></a></li>
 				</ul>
 				<nav class="setas">
-					
+					<a href="#this" class="anterior image-replace">Anterior</a>
+					<a href="#this" class="proximo image-replace">Próximo</a>
 				</nav>
 				<nav class="paginacao">
 					<ul>

@@ -106,8 +106,17 @@ header #menu li a {
 /* - CONTEUDO
 /* ----- */
 
-main {
-	
+main > .conteudo {
+	width: 100%;
+	background: #FFF;
+	position: relative;
+}
+
+main > .conteudo:after,
+main > .conteudo:before {
+	content: "";
+	position: absolute;
+	display: block;
 }
 
 /* -------------|

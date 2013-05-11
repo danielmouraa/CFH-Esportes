@@ -1,0 +1,79 @@
+/* -------------|
+/* - HOME
+/* ----- */
+
+body[data-page="home"] #destaque-home {
+	width: 940px;
+	height: 325px;
+	position: relative;
+}
+
+body[data-page="home"] #destaque-home > ul {
+	width: 860px;
+	height: 345px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 0;
+}
+
+body[data-page="home"] #destaque-home > ul li a {
+	display: block;
+	overflow: hidden;
+}
+
+body[data-page="home"] #destaque-home .setas {
+	width: 100%;
+	height: 70px;
+	margin-top: -35px;
+	position: absolute;
+	top: 50%;
+}
+
+body[data-page="home"] #destaque-home .setas a {
+	width: 28px;
+	height: 70px;
+	display: block;
+	position: absolute;
+	background: url(../images/ico/setas_a.png) no-repeat;
+}
+
+body[data-page="home"] #destaque-home .setas a.anterior {
+	left: 0;
+	background-position: left top;
+}
+
+body[data-page="home"] #destaque-home .setas a.proximo {
+	right: 0;
+	background-position: left bottom;
+}
+
+body[data-page="home"] main > .conteudo {
+	float: left;
+	clear: both;
+}
+
+body[data-page="home"] main > .conteudo:before {
+	width: 942px;
+	height: 270px;
+	background: url(../images/bkg/curva_topo_home.png) no-repeat;
+	top: -105px;
+}
+
+body[data-page="home"] main > .conteudo > section,
+body[data-page="home"] main > .conteudo > aside {
+	position: relative;
+}
+
+body[data-page="home"] main > .conteudo > section {
+	width: 360px;
+	padding: 0 20px;
+	float: left;
+	background: url(../images/bkg/curva_cinza.jpg) no-repeat left top #EEE;
+}
+
+body[data-page="home"] main > .conteudo > aside {
+	width: 500px;
+	padding: 0 20px;
+	float: right;
+}

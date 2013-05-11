@@ -9,6 +9,8 @@
 		<link rel="shortcut icon" href="images/ico/favicon.ico" type="image/x-icon" />
 		<link type="text/css" rel="stylesheet" href="styles/comum.css" media="screen" />
 		<link type="text/css" rel="stylesheet" href="styles/estrutura.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="styles/paginas.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="styles/fonts.css" media="screen" />
 		<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="styles/ie7.css" media="screen" /><![endif]-->
 	</head>
