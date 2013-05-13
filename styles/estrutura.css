@@ -110,6 +110,8 @@ main > .conteudo {
 	width: 100%;
 	background: #FFF;
 	position: relative;
+	float: left;
+	clear: both;
 }
 
 main > .conteudo:after,
@@ -117,6 +119,91 @@ main > .conteudo:before {
 	content: "";
 	position: absolute;
 	display: block;
+}
+
+main > .conteudo:before {
+	width: 940px;
+	height: 138px;
+	display: block;
+	background: url(../images/bkg/curva_topo.png?2) no-repeat left bottom;
+}
+
+main > .conteudo .post {
+	padding: 0 20px;
+}
+
+main > .conteudo .post > article {
+	width: 600px;
+	float: left;
+	margin-right: 20px;
+}
+
+main > .conteudo .post > article h1 {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 5em;
+	color: #1f6385;
+}
+
+main > .conteudo .post > article .listagem-posts li {
+	width: 100%;
+	color: #4e4e4e;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+main > .conteudo .post > article .listagem-posts li .thumb {
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #CACACA;
+
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+main > .conteudo .post > article .listagem-posts li .thumb a {
+	width: 196px;
+	height: 166px;
+	margin: 1px;
+	overflow: hidden;
+	float: left;
+}
+
+main > .conteudo .post > article .listagem-posts li .thumb img {
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+main > .conteudo .post > article .listagem-posts li h2 {
+	margin-top: 8px;
+	font-size: 2.5em;
+	font-family: 'Futura Medium';
+}
+
+main > .conteudo .post > article .listagem-posts li h2 a {
+	color: inherit;
+}
+
+main > .conteudo .post > article .listagem-posts li p {
+	font-size: 1.5em;
+	font-family: 'Futura Book';
+}
+
+main > .conteudo .post > article .listagem-posts li .ler-mais {
+	display: block;
+	font-size: 1.5em;
+	color: #1f6385;
+	float: left;
+	font-family: 'Futura Book';
+}
+
+
+/* - SIDEBAR - */
+
+main > .conteudo .post > #sidebar {
+	width: 280px;
 }
 
 /* -------------|
