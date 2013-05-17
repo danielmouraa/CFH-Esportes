@@ -77,3 +77,23 @@ body[data-page="home"] main > .conteudo > aside {
 	padding: 0 20px;
 	float: right;
 }
+
+/* -------------|
+/* - SINGLES
+/* ----- */
+
+main > .conteudo .post.single > article {
+	width: 520px;
+}
+
+main > .conteudo .post.single > #sidebar {
+	width: 360px;
+}
+
+/* -------------|
+/* - PAGES
+/* ----- */
+
+main > .conteudo .post.page > article {
+	width: 100%;
+}

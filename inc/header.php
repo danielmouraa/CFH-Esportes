@@ -18,7 +18,11 @@
 		<body data-role="<?php if( isset($data_page) && $data_page == "home" ) { echo "home"; } else { echo "internas"; } ?>" data-page="<?php if(isset($data_page)) { echo $data_page; } ?>">
 		<header>
 			<div class="logo">
-				<h1><a href="#this"><img src="images/lgo/cfh_esportes.png" alt="CFH Esportes" /></a></h1>
+				<?php if( isset($data_page) && $data_page == "home" ) { ?>
+				<h1><a href="index.php"><img src="images/lgo/cfh_esportes.png" alt="CFH Esportes" /></a></h1>
+				<?php } else { ?>
+				<div><a href="index.php"><img src="images/lgo/cfh_esportes.png" alt="CFH Esportes" /></a></div>
+				<?php } ?>
 				<span class="slogan">Este clube também é seu... Faça dele o melhor!</span>
 			</div>
 			<div class="contato">
@@ -27,10 +31,10 @@
 			</div>
 			<nav id="menu">
 				<ul>
-					<li><a href="#this">Quem Somos</a></li>
-					<li><a href="#this">Modalidades</a></li>
-					<li><a href="#this">Agenda de eventos</a></li>
-					<li><a href="#this">Cadastro de atletas</a></li>
+					<li><a href="quem_somos.php">Quem Somos</a></li>
+					<li><a href="modalidades.php">Modalidades</a></li>
+					<li><a href="agenda_eventos.php">Agenda de eventos</a></li>
+					<li><a href="cadastro_atletas.php">Cadastro de atletas</a></li>
 				</ul>
 			</nav>
 		</header>
