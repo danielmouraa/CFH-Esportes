@@ -108,6 +108,8 @@ header #menu li a {
 
 main > .conteudo {
 	width: 100%;
+	margin-top: 138px;
+	margin-bottom: 85px;
 	background: #FFF;
 	position: relative;
 	float: left;
@@ -122,14 +124,30 @@ main > .conteudo:before {
 }
 
 main > .conteudo:before {
-/*	width: 940px;
+	width: 940px;
 	height: 138px;
+	margin-top: -138px;
 	display: block;
-	background: url(../images/bkg/curva_topo.png?2) no-repeat left bottom;*/
+	background: url(../images/bkg/curva_topo.png?2) no-repeat left bottom;
+}
+
+main > .conteudo:after {
+	width: 960px;
+	height: 65px;
+	margin-bottom: -65px;
+	bottom: 0;
+	left: -20px;
+	display: block;
+	background: url(../images/bkg/curva_bottom.png?2) no-repeat left bottom;
+}
+
+body[data-role="internas"] main > .conteudo .post {
+	margin-top: -40px;
 }
 
 main > .conteudo .post {
 	padding: 0 20px;
+	position: relative;
 }
 
 main > .conteudo .post > article {
@@ -298,6 +316,11 @@ main > .conteudo .post > #sidebar > .bloco.galeria-fotos li a {
 	width: 110px;
 	height: 75px;
 }
+
+main > .conteudo .post > #sidebar #agenda li.ativo {
+	width: 160px;
+}
+
 
 /* -------------|
 /* - RODAPE

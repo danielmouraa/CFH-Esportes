@@ -72,6 +72,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Posts */
 
+.post > article h2 {
+	font-size: 2em;
+	margin-bottom: 10px;
+	font-family: 'Futura';
+}
+
+.post > article a {
+	color: #1f6385;
+	font-size: 15px;
+	font-family: 'Futura';
+}
+
+.post > article .alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.post > article .alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
 .post > article .titulo {
 	clear: both;
 	overflow: hidden;
@@ -83,13 +105,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post > article .titulo .share {
+	height: 20px;
 	margin-top: 25px;
 	float: right;
 }
 
+.post > article figure {
+	padding: 1px;
+	border: 1px solid #cacaca;
+}
+
+.post > article figure,
+.post > article figure img {
+	-webkit-border-radius: 3px 3px 3px 3px;;
+	-moz-border-radius: 3px 3px 3px 3px;;
+	border-radius: 3px 3px 3px 3px;;
+}
+
+.post > article figure img {
+	display: block;
+}
+
+.post > article ul {
+	padding-left: 30px;
+	margin-bottom: 15px;
+	list-style: disc outside;
+	overflow: hidden;
+}
+
+.post > article ul li {
+
+}
+
+.post > article .mapa {
+	width: 518px;
+	height: 433px;
+	overflow: hidden;
+	border: 1px solid #cacaca;
+}
+
+.post > article .mapa iframe {
+	margin: -45px;
+}
+
+.post > article .clearfix {
+	clear: both;
+}
+
 .post > article p {
 	display: block;
-	margin-bottom: 42px;
+	margin-bottom: 15px;
 	font-family: 'Futura Book';
 	font-size: 1.5em;
 }
@@ -98,6 +163,194 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.5em;
 	font-family: 'Futura Book';
 }
+
+/*Agenda*/
+
+#agenda {
+}
+
+#agenda ul {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#agenda li {
+	width: 98px;
+	height: 198px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	background: #EEE;
+	border: 1px solid #c6c6c6;
+}
+
+#agenda li.ativo {
+	width: 300px;
+	height: 198px;
+	background: #FFF;
+	border: none;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+
+#agenda li .data {
+	font-size: 13px;
+	display: block;
+}
+
+#agenda li .data strong {
+	font-size: 22px;
+}
+
+#agenda li .title {
+	font-size: 15px;
+}
+
+#agenda li.ativo .data {
+	font-size: 20px;
+}
+
+#agenda li.ativo .data strong {
+	font-size: 50px;
+}
+
+#agenda li.ativo .title {
+	font-size: 30px;
+}
+
+#agenda li.ativo .title p {
+	font-size: 15px;
+}
+
+/*Abas Topicos*/
+
+#abas-topicos {
+	width: 540px;
+	margin-bottom: 20px;
+	border: 1px solid #DEDEDE;
+}
+
+#abas-topicos > nav {
+	height: 34px;
+	background: #EEE;
+}
+
+#abas-topicos > nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+#abas-topicos > nav li {
+	float: left;
+	border-left: 1px solid #DEDEDE;
+}
+
+#abas-topicos > nav li a {
+	height: 33px;
+	padding: 0 10px;
+	font-family: 'Futura Bold';
+	text-align: center;
+	line-height: 33px;
+	display: block;
+	color: #4e4e4e;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+#abas-topicos > nav li a.ativo {
+	background: #FFF;
+	border-bottom: none;
+}
+
+#abas-topicos .topicos {
+	padding: 40px;
+}
+
+
+/*Planos de Pagamento*/
+
+.planos-pagamento {
+
+}
+
+.planos-pagamento > ul {
+	list-style: none;
+	padding: 0;
+	float: left;
+}
+
+.planos-pagamento > ul li {
+	width: 223px;
+	height: 236px;
+	padding-top: 20px;
+	margin-top: 40px;
+	float: left;
+	background: #e8eefb;
+	text-align: center;
+	border: 1px solid #adb4c2;
+	border-left: none;
+}
+
+.planos-pagamento > ul li:first-child {
+	border-right: none;
+	border-left: 1px solid #adb4c2;
+}
+
+.planos-pagamento > ul li strong {
+	text-transform: uppercase;
+	font-size: 1em;
+	font-family: 'Futura Bold';
+	font-weight: normal;
+}
+
+.planos-pagamento > ul li span {
+	display: block;
+}
+
+.planos-pagamento > ul li p {
+	margin-bottom: 0;
+}
+
+.planos-pagamento > ul li.centro {
+	padding-top: 30px;
+	height: 306px;
+	margin: 0;
+	background: none;
+	border: 1px solid #adb4c2;
+}
+
+.planos-pagamento > ul li .botao {
+	width: 110px;
+	margin: 20px auto 0;
+	padding-top: 20px;
+	border-top: 1px solid #adb4c2;
+}
+
+.planos-pagamento > ul li .botao_a {
+	width: 105px;
+	margin: 0 auto;
+	color: #FFF;
+	padding: 0;
+	font-family: 'Futura CondensedOblique';
+	font-size: 20px;
+}
+
+.planos-pagamento > ul li .valor {
+	font-family: 'Futura';
+	font-size: 25px;
+	color: #63266f;
+}
+
+.planos-pagamento > ul li.centro .valor {
+	font-size: 30px;
+}
+
+.planos-pagamento > div {
+	width: 200px;
+	float: right;
+}
+
+/*Tabela dias/horarios*/
 
 .post > article .dias-horarios p {
 	margin-bottom: 0;
@@ -132,8 +385,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 15px;
 	font-family: 'Futura';
 }
-
-
 
 
 /* Thumbs */

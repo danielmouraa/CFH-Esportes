@@ -54,15 +54,15 @@
 						<div class="bloco galeria-fotos">
 							<h3>Galeria de Fotos</h3>
 							<ul>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li class="ultimo"><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li class="ultimo"><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
-								<li class="ultimo"><a href="#this"><img src="images/fke/6.jpg" alt=""></a></li>
+								<li><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 1 de 9"></a></li>
+								<li><a href="images/fke/06_2.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 2 de 9"></a></li>
+								<li class="ultimo"><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 3 de 9"></a></li>
+								<li><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 4 de 9"></a></li>
+								<li><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 5 de 9"></a></li>
+								<li class="ultimo"><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 6 de 9"></a></li>
+								<li><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 7 de 9"></a></li>
+								<li><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 8 de 9"></a></li>
+								<li class="ultimo"><a href="images/fke/06.jpg" rel="lightbox[judo]" title="Legenda Imagem"><img src="images/fke/06-thumb.jpg" alt="Imagem 9 de 9"></a></li>
 							</ul>
 						</div>
 					<?php } ?>
