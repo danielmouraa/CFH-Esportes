@@ -321,11 +321,48 @@ main > .conteudo .post > #sidebar #agenda li.ativo {
 	width: 160px;
 }
 
+/* BLOCO LOGIN */
+
+main > .conteudo .post > #sidebar > .bloco.login > p {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 15px;
+	font-family: 'Futura Book';
+}
+
+main > .conteudo .post > #sidebar > .bloco.login input[type="text"] {
+	width: 246px;
+}
+
 
 /* -------------|
 /* - RODAPE
 /* ----- */
 
 footer {
-	
+	margin-bottom: 40px;
+}
+
+footer > div {
+	width: 395px;
+	margin: 0 auto;
+	color: #FFF;
+}
+
+footer > div .logo {
+	float: left;
+}
+
+footer > div .info {
+	width: 235px;
+	float: right;
+}
+
+footer > div .info {
+	font-size: 15px;
+}
+
+footer > div .info .logo-tark {
+	margin-top: 20px;
+	display: block;
 }

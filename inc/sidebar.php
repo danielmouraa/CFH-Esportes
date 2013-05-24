@@ -104,25 +104,44 @@
 					<?php } ?>
 
 					<?php if ( $data_page == "modalidades_interna" ) { ?>
-					<div id="agenda" class="bloco proximos-eventos">
-						<h3>Próximos eventos de Judô</h3>
-						<ul>
-							<li class="anterior">
-								<span class="data"><strong>23</strong>/12/2012</span>
-								<span>Campeonato lorem ipsum</span>
-							</li>
-							<li class="ativo">
-								<span class="data"><strong>23</strong>/12/2012</span>
-								<span><strong>Campeonato lorem ipsum</strong></span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
-								<a href="#this" class="botao_a">Inscreva-se já!</a>
-							</li>
-							<li class="proximo">
-								<span class="data"><strong>05</strong>/02/2013</span>
-								<span>Campeonato lorem ipsum</span>
-							</li>
-						</ul>
-					</div>
+						<div id="agenda" class="bloco proximos-eventos">
+							<h3>Próximos eventos de Judô</h3>
+							<ul>
+								<li class="anterior">
+									<span class="data"><strong>23</strong>/12/2012</span>
+									<span>Campeonato lorem ipsum</span>
+								</li>
+								<li class="ativo">
+									<span class="data"><strong>23</strong>/12/2012</span>
+									<span><strong>Campeonato lorem ipsum</strong></span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
+									<a href="#this" class="botao_a">Inscreva-se já!</a>
+								</li>
+								<li class="proximo">
+									<span class="data"><strong>05</strong>/02/2013</span>
+									<span>Campeonato lorem ipsum</span>
+								</li>
+							</ul>
+						</div>
+					<?php } ?>
+
+					<?php if ( $data_page == "cadastro_atletas" ) { ?>
+						<div class="bloco login">
+							<h3>Login</h3>
+							<p>Já é cadastrado? Acesse sua conta:</p>
+							<form action="#">
+								<div>
+									<label for="nome">Nome:</label>
+									<input name="nome" type="text"/>
+								</div>
+								<div>
+									<label for="sexo">Sexo:</label>
+									<input name="sexto" type="text"/>
+								</div>
+								<a href="#this" class="esqueci-senha">Esqueci minha senha</a>
+								<input type="submit" value="Acessar" class="botao_a" />
+							</form>
+						</div>
 					<?php } ?>
 
 					</aside>

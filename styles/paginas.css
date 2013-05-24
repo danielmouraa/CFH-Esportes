@@ -97,3 +97,29 @@ main > .conteudo .post.single > #sidebar {
 main > .conteudo .post.page > article {
 	width: 100%;
 }
+
+/* -------------|
+/* - PAGE
+/* -- CADASTRO ATLETAS
+/* ----- */
+
+body[data-page="cadastro_atletas"] .conteudo .post > article {
+	width: 540.8px;
+}
+
+body[data-page="cadastro_atletas"] .conteudo .post #sidebar {
+	width: 338px;
+}
+
+/* -------------|
+/* - PAGE
+/* -- DADOS ATLETAS
+/* ----- */
+
+body[data-page="dados_atletas"] .conteudo .post > article {
+	width: 100%;
+}
+
+body[data-page="dados_atletas"] #abas-topicos input[type="submit"] {
+	float: left;
+}

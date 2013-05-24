@@ -17,28 +17,30 @@
 									<li><a href="#topico-4">Forma de Pagamento</a></li>
 								</ul>
 							</nav>
-							<div id="topico-1" class="topicos">
-								<form action="#">
-									<div>
-										<label for="nome">Nome:</label>
-										<input name="nome" type="text"/>
-									</div>
-									<div>
-										<label for="sexo">Sexo:</label>
-										<input name="sexto" type="text"/>
-									</div>
-									<input type="submit" value="Savar e prosseguir" />
-								</form>
-							</div>
-							<div id="topico-2" class="topicos">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-							</div>
-							<div id="topico-3" class="topicos">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-							</div>
-							<div id="topico-4" class="topicos">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-							</div>
+							<article>
+								<div id="topico-1" class="topicos">
+									<form action="#">
+										<div>
+											<label for="nome">Nome:</label>
+											<input name="nome" type="text"/>
+										</div>
+										<div>
+											<label for="sexo">Sexo:</label>
+											<input name="sexto" type="text"/>
+										</div>
+										<input type="submit" value="Savar e prosseguir" class="botao_a" />
+									</form>
+								</div>
+								<div id="topico-2" class="topicos">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+								</div>
+								<div id="topico-3" class="topicos">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+								</div>
+								<div id="topico-4" class="topicos">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+								</div>
+							</article>
 						</div>
 					</article>
 					<?php include("inc/sidebar.php"); ?>

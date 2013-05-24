@@ -226,14 +226,11 @@ h1, h2, h3, h4, h5, h6 {
 /*Abas Topicos*/
 
 #abas-topicos {
-	width: 540px;
 	margin-bottom: 20px;
-	border: 1px solid #DEDEDE;
 }
 
 #abas-topicos > nav {
 	height: 34px;
-	background: #EEE;
 }
 
 #abas-topicos > nav ul {
@@ -243,6 +240,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #abas-topicos > nav li {
 	float: left;
+	border: 1px solid #DEDEDE;
+	border-bottom: none;
+	border-left: none;
+	background: #EEE;
+}
+
+#abas-topicos > nav li:first-child {
 	border-left: 1px solid #DEDEDE;
 }
 
@@ -259,11 +263,47 @@ h1, h2, h3, h4, h5, h6 {
 
 #abas-topicos > nav li a.ativo {
 	background: #FFF;
-	border-bottom: none;
+	border-bottom: 1px solid #FFF;
 }
 
-#abas-topicos .topicos {
+#abas-topicos > article {
 	padding: 40px;
+	border: 1px solid #DEDEDE;
+	overflow: hidden;
+}
+
+#abas-topicos > article form > div input {
+	width: 366px;
+}
+
+form > div {
+	margin-bottom: 10px;
+}
+
+form > div label {
+	width: 60px;
+	height: 27px;
+	margin-right: 10px;
+	float: left;
+	display: block;
+	font-family: 'Futura Bold';
+	font-size: 15px;
+	line-height: 27px;
+	text-align: right;
+}
+
+form > div input {
+	height: 27px;
+	padding: 0 10px;
+	line-height: 27px;
+	font-family: Arial;
+	font-size: 12px;
+	border: 1px solid #DEDEDE;
+}
+
+form > input[type="submit"] {
+	margin: 10px 0 0;
+	float: right;
 }
 
 
@@ -442,6 +482,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .botao_a:hover {
 	text-decoration: none;
+}
+
+input.botao_a {
+	cursor: pointer;
+	clear: both;
+}
+
+.esqueci-senha {
+	float: right;
+	display: block;
+	color: #cc8407;
+	font-size: 12px;
+	font-family: 'Futura Book';
 }
 
 /* Image Replacement */
