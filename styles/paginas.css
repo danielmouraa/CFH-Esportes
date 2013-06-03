@@ -51,13 +51,16 @@ body[data-page="home"] #destaque-home .setas a.proximo {
 body[data-page="home"] main > .conteudo {
 	float: left;
 	clear: both;
+	margin-top: 0;
 }
 
 body[data-page="home"] main > .conteudo:before {
-	width: 942px;
+/*	width: 942px;
 	height: 270px;
 	background: url(../images/bkg/curva_topo_home.png) no-repeat;
-	top: -105px;
+	top: -105px;*/
+	background: none;
+	margin-top: 0;
 }
 
 body[data-page="home"] main > .conteudo > section,
@@ -70,6 +73,40 @@ body[data-page="home"] main > .conteudo > section {
 	padding: 0 20px;
 	float: left;
 	background: url(../images/bkg/curva_cinza.jpg) no-repeat left top #EEE;
+}
+
+body[data-page="home"] main > .conteudo > section .destaque {
+	margin-bottom: 20px;
+}
+
+body[data-page="home"] main > .conteudo > section .destaque h2 {
+	font-size: 30px;
+	color: #1f6385;
+}
+
+body[data-page="home"] main > .conteudo > section .destaque .thumb {
+	width: 355px;
+	height: 225px;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #FFF;
+
+	-webkit-box-shadow: 0 0 2px #666;
+	-moz-box-shadow: 0 0 2px #666;
+	box-shadow: 0 0 2px #666;
+}
+
+body[data-page="home"] main > .conteudo > section .destaque .thumb .botao_a {
+	right: 13px;
+	bottom: 5px;
+	position: absolute;
+	border: 2px solid #855d16;
+}
+
+body[data-page="home"] main > .conteudo > section .destaque p {
+	font-size: 20px;
+	color: #4e4e4e;
+	font-family: 'Futura';
 }
 
 body[data-page="home"] main > .conteudo > aside {
