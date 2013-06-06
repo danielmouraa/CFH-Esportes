@@ -12,43 +12,43 @@
 							<ul>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
 									</figure>
-									<h2><a href="#this" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
+									<h2><a href="noticias_interna.php" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus.</p>
-									<a href="#this" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
+									<a href="noticias_interna.php" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
 									</figure>
-									<h2><a href="#this" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
+									<h2><a href="noticias_interna.php" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus.</p>
-									<a href="#this" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
+									<a href="noticias_interna.php" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
 									</figure>
-									<h2><a href="#this" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
+									<h2><a href="noticias_interna.php" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus.</p>
-									<a href="#this" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
+									<a href="noticias_interna.php" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
 									</figure>
-									<h2><a href="#this" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
+									<h2><a href="noticias_interna.php" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus.</p>
-									<a href="#this" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
+									<a href="noticias_interna.php" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/4.jpg" alt=""></a>
 									</figure>
-									<h2><a href="#this" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
+									<h2><a href="noticias_interna.php" title="Link para Lorem Ipsum">Lorem Ipsum Dolor Sit Amet</a></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus.</p>
-									<a href="#this" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
+									<a href="noticias_interna.php" title="Link para Lorem Ipsum" class="ler-mais">Confira tudo a respeito</a>
 								</li>
 							</ul>
 						</div>

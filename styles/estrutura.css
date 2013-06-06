@@ -245,28 +245,28 @@ main > .conteudo .post > #sidebar .bloco p {
 	font-size: 1.5em;
 }
 
-/* BLOCO MODALIDADE */
+/* BLOCO ESCOLHER MODALIDADE */
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .botao_a {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .botao_a {
 	margin-bottom: 50px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha {
 	padding: 20px 0 20px 20px;
 	border: 1px solid #adb4c2;
 	background: #e8eefb;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha > div {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha > div {
 	clear: both;
 	margin-top: 15px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha > div:first-child {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha > div:first-child {
 	margin: 0;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha label {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha label {
 	width: 80px;
 	height: 22px;
 	float: left;
@@ -278,7 +278,7 @@ main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha label {
 	font-size: 12px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidade > .escolha select {
+main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha select {
 	width: 155px;
 	height: 20px;
 	font-size: 12px;
@@ -334,6 +334,28 @@ main > .conteudo .post > #sidebar > .bloco.login input[type="text"] {
 	width: 246px;
 }
 
+/* BLOCO MODALIDADES */
+
+main > .conteudo .post > #sidebar > .bloco.modalidades > ul li {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+main > .conteudo .post > #sidebar > .bloco.modalidades > ul li h4 {
+	color: #1F6385;
+}
+
+main > .conteudo .post > #sidebar > .bloco.modalidades > ul li .thumb {
+	margin-right: 10px;
+}
+
+main > .conteudo .post > #sidebar > .bloco.modalidades > ul li .thumb a {
+	width: 115px;
+	height: 84px;
+}
+
+
 
 /* -------------|
 /* - RODAPE
@@ -364,5 +386,5 @@ footer > div .info {
 
 footer > div .info .logo-tark {
 	margin-top: 20px;
-	display: block;
+	display: inline-block;
 }

@@ -8,7 +8,7 @@
 					<p><a href="mailto:contato@cfhesportes.com.br">contato@cfhesportes.com.br</a></p>
 					<p>SGAN 914 Conjunto I, colégio Leonardo da Vinci</p>
 					<p>CFH esportes Copyright © 2008</p>
-					<a href="#this" class="logo-tark"><img src="images/lgo/tark.png" alt="" /></a>
+					<a href="http://www.tark.com.br/" class="logo-tark" target="_blank"><img src="images/lgo/tark.png" alt="Tark" /></a>
 				</div>
 			</div>
 		</footer>

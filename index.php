@@ -14,17 +14,20 @@
 					<a href="#this" class="proximo image-replace">Próximo</a>
 				</nav>
 				<nav class="paginacao">
-					<ul>
-						<li><a href="#this">1</a></li>
-						<li><a href="#this">2</a></li>
-						<li><a href="#this">3</a></li>
-						<li><a href="#this">4</a></li>
-					</ul>
+					<div class="alinhamento">
+						<ul>
+							<li class="ativo"><a href="#this">1</a></li>
+							<li><a href="#this">2</a></li>
+							<li><a href="#this">3</a></li>
+							<li><a href="#this">4</a></li>
+						</ul>
+					</div>
 				</nav>
 			</section>
 			<section class="conteudo">
 				<section>
 					<div class="destaque">
+						<div class="bola"></div>
 						<h2>Campeonato de futsal 2013</h2>
 						<div class="thumb">
 							<img src="images/fke/1.jpg" height="224" width="354" alt="" />
@@ -61,6 +64,7 @@
 				<aside>
 					<h2>Próximos eventos:</h2>
 					<section id="agenda">
+						<a href="#this" class="seta anterior">Anterior</a>
 						<ul>
 							<li class="anterior">
 								<span class="data"><strong>23</strong>/12/2012</span>
@@ -68,7 +72,7 @@
 							</li>
 							<li class="ativo">
 								<span class="data"><strong>23</strong>/12/2012</span>
-								<span><strong>Campeonato lorem ipsum</strong></span>
+								<span class="title">Campeonato lorem ipsum</span>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
 								<a href="#this" class="botao_a">Inscreva-se já!</a>
 							</li>
@@ -77,11 +81,15 @@
 								<span>Campeonato lorem ipsum</span>
 							</li>
 						</ul>
+						<a href="#this" class="seta proximo">Próximo</a>
 					</section>
 					<div class="post">
 						<div class="post-destaque">
+							<figure>
+								<img src="images/fke/8.jpg" alt="" />
+							</figure>
 							<div>
-								<p><strong>Os benefícios da caoeira na formação</strong></p>
+								<strong>Os benefícios da caoeira na formação</strong>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac erat fermentum luctus in in turpis. </p>
 							</div>
 						</div>

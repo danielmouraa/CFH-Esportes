@@ -27,7 +27,7 @@
 				<span class="slogan">Este clube também é seu... Faça dele o melhor!</span>
 			</div>
 			<div class="contato">
-				<a href="#this">Fale com a gente</a>
+				<a href="contato.php">Fale com a gente</a>
 				<a href="#this">Trabalhe conosco</a>
 			</div>
 			<nav id="menu">

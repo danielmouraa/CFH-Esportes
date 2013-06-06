@@ -167,6 +167,29 @@ h1, h2, h3, h4, h5, h6 {
 /*Agenda*/
 
 #agenda {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#agenda .seta {
+	width: 14px;
+	height: 43px;
+	margin-top: -21.5px;
+	display: block;
+	text-indent: -9999em;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	background: url(../images/ico/setas_b.png) no-repeat;
+}
+
+#agenda .seta.anterior {
+	left: 10px;
+}
+
+#agenda .seta.proximo {
+	right: 10px;
+	background-position: center bottom;
 }
 
 #agenda ul {
@@ -177,7 +200,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #agenda li {
 	width: 98px;
-	height: 198px;
+	height: 143px;
+	padding-top: 55px;
 	float: left;
 	list-style: none;
 	text-align: center;
@@ -188,19 +212,36 @@ h1, h2, h3, h4, h5, h6 {
 #agenda li.ativo {
 	width: 300px;
 	height: 198px;
+	padding: 0;
 	background: #FFF;
 	border: none;
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
 }
 
+#agenda li.anterior span {
+	margin-left: 30px;
+}
+
+#agenda li.proximo span {
+	margin-right: 30px;
+}
+
 #agenda li .data {
 	font-size: 13px;
 	display: block;
+	text-align: right;
 }
 
 #agenda li .data strong {
 	font-size: 22px;
+}
+
+#agenda li span {
+	width: 65px;
+	display: block;
+	font-size: 15px;
+	color: #757575;
 }
 
 #agenda li .title {
@@ -209,18 +250,36 @@ h1, h2, h3, h4, h5, h6 {
 
 #agenda li.ativo .data {
 	font-size: 20px;
+	color: #c98a8a;
+	text-align: center;
 }
 
 #agenda li.ativo .data strong {
 	font-size: 50px;
+	color: #d24d4d;
+}
+
+#agenda li.ativo span {
+	width: auto;
+	text-align: normal;
 }
 
 #agenda li.ativo .title {
 	font-size: 30px;
+	color: #4f4f4f;
 }
 
-#agenda li.ativo .title p {
+#agenda li.ativo p {
+	margin-bottom: 10px;
+	display: block;
 	font-size: 15px;
+	font-family: 'Futura';
+}
+
+#agenda li.ativo .botao_a {
+	width: 105px;
+	display: block;
+	margin: 0 auto;
 }
 
 /*Abas Topicos*/
@@ -310,6 +369,14 @@ form > input[type="submit"] {
 	float: right;
 }
 
+form > div textarea {
+	height: 130px;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 12px;
+	resize: none;
+	border: 1px solid #DEDEDE;
+}
 
 /*Planos de Pagamento*/
 
@@ -445,6 +512,8 @@ form > input[type="submit"] {
 
 .thumb a,
 .galeria-fotos li a {
+	width: 115px;
+	height: 84px;
 	margin: 1px;
 	overflow: hidden;
 	float: left;
@@ -499,6 +568,22 @@ input.botao_a {
 	color: #cc8407;
 	font-size: 12px;
 	font-family: 'Futura Book';
+}
+
+/*Formulario Contato*/
+
+#contato {
+	width: 480px;
+}
+
+#contato div > label {
+	width: 90px;
+	color: #4e4e4e;
+}
+
+#contato div > input,
+#contato div > textarea {
+	width: 358px;
 }
 
 /* Image Replacement */

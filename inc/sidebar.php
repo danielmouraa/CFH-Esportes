@@ -1,7 +1,7 @@
 					<aside id="sidebar">
 
 					<?php if ( $data_page == "noticias" || $data_page == "modalidades" ) { ?>
-						<div class="bloco modalidade">
+						<div class="bloco escolher-modalidade">
 							<a href="#this" title="Link para Lorem Ipsum" class="botao_a modalidades">Tabela completa de modalidades e horários</a>
 							<h3>Escolha uma modalidade</h3>
 							<div class="escolha">
@@ -73,35 +73,73 @@
 							<ul>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
 									</figure>
-									<h4><a href="#this" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<h4><a href="noticias_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
 									</figure>
-									<h4><a href="#this" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<h4><a href="noticias_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
 									</figure>
-									<h4><a href="#this" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<h4><a href="noticias_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</li>
 								<li>
 									<figure class="thumb">
-										<a href="#this" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+										<a href="noticias_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
 									</figure>
-									<h4><a href="#this" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<h4><a href="noticias_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</li>
 							</ul>
 						</div>
 					<?php } ?>
+
+					<?php if ( $data_page == "contato" ) { ?>
+						<div class="bloco modalidades">
+							<h3>Conheça nossas modalidades</h3>
+							<ul>
+								<li>
+									<figure class="thumb">
+										<a href="modalidades_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+									</figure>
+									<h4><a href="modalidades_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+								<li>
+									<figure class="thumb">
+										<a href="modalidades_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+									</figure>
+									<h4><a href="modalidades_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+								<li>
+									<figure class="thumb">
+										<a href="modalidades_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+									</figure>
+									<h4><a href="modalidades_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+								<li>
+									<figure class="thumb">
+										<a href="modalidades_interna.php" title="Link para Lorem Ipsum"><img src="images/fke/5.jpg" alt="" /></a>
+									</figure>
+									<h4><a href="modalidades_interna.php" title="Link para Lorem Ipsum">Street dance</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+							</ul>
+						</div>
+						<a href="#this" title="Link para Lorem Ipsum" class="botao_a modalidades">Tabela completa de modalidades e horários</a>
+					<?php } ?>
+
 
 					<?php if ( $data_page == "modalidades_interna" ) { ?>
 						<div id="agenda" class="bloco proximos-eventos">

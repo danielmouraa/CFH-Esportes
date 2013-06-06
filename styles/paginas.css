@@ -5,6 +5,7 @@
 body[data-page="home"] #destaque-home {
 	width: 940px;
 	height: 325px;
+	margin-top: 30px;
 	position: relative;
 }
 
@@ -14,7 +15,7 @@ body[data-page="home"] #destaque-home > ul {
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
-	z-index: 0;
+	z-index: 1;
 }
 
 body[data-page="home"] #destaque-home > ul li a {
@@ -28,6 +29,7 @@ body[data-page="home"] #destaque-home .setas {
 	margin-top: -35px;
 	position: absolute;
 	top: 50%;
+	z-index: 0;
 }
 
 body[data-page="home"] #destaque-home .setas a {
@@ -48,24 +50,73 @@ body[data-page="home"] #destaque-home .setas a.proximo {
 	background-position: left bottom;
 }
 
+body[data-page="home"] #destaque-home .paginacao {
+	width: 960px;
+	margin-top: -50px;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+
+body[data-page="home"] #destaque-home .paginacao .alinhamento {
+	float: left;
+	left: 50%;
+	position: relative;
+}
+
+body[data-page="home"] #destaque-home .paginacao ul {
+	float: left;
+	position: relative;
+	right: 50%;
+}
+
+body[data-page="home"] #destaque-home .paginacao ul li {
+	margin-left: 10px;
+	float: left;
+}
+
+body[data-page="home"] #destaque-home .paginacao ul li:first-child {
+	margin: 0;
+}
+
+body[data-page="home"] #destaque-home .paginacao ul li a {
+	width: 11px;
+	height: 10px;
+	text-indent: -9999em;
+	overflow: hidden;
+	display: block;
+	background: url(../images/ico/paginacao.png) no-repeat;
+}
+
+body[data-page="home"] #destaque-home .paginacao ul li a:hover,
+body[data-page="home"] #destaque-home .paginacao ul li.ativo a {
+	background-position: center bottom;
+}
+
 body[data-page="home"] main > .conteudo {
 	float: left;
 	clear: both;
 	margin-top: 0;
+	background: url(../images/bkg/home_conteudo.jpg) repeat-y;
 }
 
 body[data-page="home"] main > .conteudo:before {
-/*	width: 942px;
+	width: 942px;
 	height: 270px;
-	background: url(../images/bkg/curva_topo_home.png) no-repeat;
-	top: -105px;*/
-	background: none;
+	top: -105px;
 	margin-top: 0;
+	z-index: 2;
+	background: url(../images/bkg/curva_topo_home.png) no-repeat;
+}
+
+body[data-page="home"] main > .conteudo:after {
+	background: url(../images/bkg/curva_bottom_home.png) no-repeat;
 }
 
 body[data-page="home"] main > .conteudo > section,
 body[data-page="home"] main > .conteudo > aside {
 	position: relative;
+	z-index: 3;
 }
 
 body[data-page="home"] main > .conteudo > section {
@@ -76,10 +127,22 @@ body[data-page="home"] main > .conteudo > section {
 }
 
 body[data-page="home"] main > .conteudo > section .destaque {
+	position: relative;
 	margin-bottom: 20px;
 }
 
+body[data-page="home"] main > .conteudo > section .destaque .bola {
+	width: 70px;
+	height: 74px;
+	position: absolute;
+	top: -15px;
+	left: 0;
+	z-index: 2;
+	background: url(../images/ico/bola.png) no-repeat;
+}
+
 body[data-page="home"] main > .conteudo > section .destaque h2 {
+	margin-left: 80px;
 	font-size: 30px;
 	color: #1f6385;
 }
@@ -97,6 +160,7 @@ body[data-page="home"] main > .conteudo > section .destaque .thumb {
 }
 
 body[data-page="home"] main > .conteudo > section .destaque .thumb .botao_a {
+	height: auto;
 	right: 13px;
 	bottom: 5px;
 	position: absolute;
@@ -109,10 +173,121 @@ body[data-page="home"] main > .conteudo > section .destaque p {
 	font-family: 'Futura';
 }
 
+body[data-page="home"] main > .conteudo > section > h3 {
+	font-size: 25px;
+	color: #1f6385;
+}
+
+body[data-page="home"] main > .conteudo .listagem-posts li {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+body[data-page="home"] main > .conteudo .listagem-posts .thumb {
+	margin-right: 10px;
+}
+
+body[data-page="home"] main > .conteudo .listagem-posts h4 {
+	font-size: 20px;
+	color: #1f6385;
+}
+
+body[data-page="home"] main > .conteudo .listagem-posts p {
+	font-family: 'Futura';
+	font-size: 15px;
+}
+
+body[data-page="home"] main > .conteudo > section .todos-eventos {
+	font-family: 'Futura';
+	font-size: 15px;
+	color: #2186c1;
+}
+
 body[data-page="home"] main > .conteudo > aside {
 	width: 500px;
 	padding: 0 20px;
 	float: right;
+}
+
+body[data-page="home"] main > .conteudo > aside h2 {
+	font-size: 30px;
+	color: #cc3333;
+}
+
+body[data-page="home"] main > .conteudo > aside .post {
+	padding: 0;
+}
+
+body[data-page="home"] main > .conteudo > aside .post-destaque {
+	margin-bottom: 20px;
+	float: left;
+	position: relative;
+	border: 1px solid #CACACA;
+	border-radius: 3px 3px 3px 3px;
+}
+
+body[data-page="home"] main > .conteudo > aside .post-destaque figure {
+	width: 495px;
+	height: 280px;
+	float: left;
+	margin: 1px;
+	overflow: hidden;
+	border-radius: 3px 3px 3px 3px;
+}
+
+body[data-page="home"] main > .conteudo > aside .post-destaque > div {
+	width: 485px;
+	margin: 0 0 1px 1px;
+	height: 73px;
+	padding: 45px 0 0 10px;
+	background: url(../images/bkg/overlay_home.png) no-repeat;
+	color: #FFF;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0px 0px 3px 3px;
+}
+
+body[data-page="home"] main > .conteudo > aside .post-destaque > div > strong {
+	font-size: 25px;
+	line-height: 10px;
+	font-family: 'Futura CondensedOblique';
+	font-weight: normal;
+}
+
+body[data-page="home"] main > .conteudo > aside .post-destaque > div p {
+	font-size: 15px;
+	font-family: 'Futura';
+}
+
+body[data-page="home"] main > .conteudo > aside .listagem-posts {
+	width: 274px;
+	float: left;
+}
+
+body[data-page="home"] main > .conteudo > aside .listagem-posts li {
+	margin: 20px 0 0;
+	padding: 20px 0 0;
+	border-bottom: none;
+	border-top: 1px solid #d9d9d9;
+}
+
+body[data-page="home"] main > .conteudo > aside .listagem-posts li:first-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body[data-page="home"] main > .conteudo > aside .banner {
+	float: left;
+}
+
+body[data-page="home"] main > .conteudo > aside .banner a {
+	display: block;
 }
 
 /* -------------|
