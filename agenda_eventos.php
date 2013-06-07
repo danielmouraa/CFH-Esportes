@@ -8,6 +8,7 @@
 				<section class="post page">
 					<article>
 						<h1>Agenda de Eventos</h1>
+						<div id="agenda"></div>
 					</article>
 					<?php include("inc/sidebar.php"); ?>
 				</section>

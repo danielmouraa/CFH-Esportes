@@ -586,6 +586,12 @@ input.botao_a {
 	width: 358px;
 }
 
+/*Agenda*/
+
+#agenda {
+	width: 490px;
+}
+
 /* Image Replacement */
 
 .image-replace {

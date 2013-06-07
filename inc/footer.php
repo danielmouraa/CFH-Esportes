@@ -15,11 +15,15 @@
 
 		<script type="text/javascript" src="scripts/plugins/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="scripts/plugins/lightbox.js"></script>
+		<script type="text/javascript" src="scripts/plugins/glDatePicker.js"></script>
 		<script type="text/javascript" src="scripts/base.js"></script>
 		<script type="text/javascript">
 			$(window).load(function(){
 				// js.engatilhaModal();
 				js.navAbas();
+				<?php if ($data_page == 'agenda_eventos') { ?>
+				js.agendaEventos();
+				<?php } ?>
 			})
 		</script>
 	</body>
