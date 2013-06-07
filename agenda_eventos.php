@@ -7,8 +7,11 @@
 			<section class="conteudo">
 				<section class="post page">
 					<article>
-						<h1>Agenda de Eventos</h1>
-						<div id="agenda"></div>
+						<div class="titulo">
+							<h1>Agenda de Eventos</h1>
+							<?php include("inc/share.php"); ?>
+						</div>
+						<div id="calendario"><!-- Adicionado por Javascript --></div>
 					</article>
 					<?php include("inc/sidebar.php"); ?>
 				</section>

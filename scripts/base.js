@@ -34,40 +34,63 @@ var js =
 	},
 
 	/**
-	 * Ativa o plugin da agenda, e configura datas especiais
+	 * Ativa o plugin da calendario, e configura datas especiais
 	 *
 	 * @return	false
 	 * @author	Daniel Moura
 	*/
-	agendaEventos: function() {
-		$('#agenda').glDatePicker(
+	calendarioEventos: function() {
+		var descricao = '',
+			monthNames = [ 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ];
+
+		$('#calendario').glDatePicker(
 		{
 			showAlways: true,
 			cssName: 'flatwhite',
 			prevArrow: '',
 			nextArrow: '',
+
+			// Adiciona os eventos
 			specialDates: [
 				{
-					date: new Date(2013, 0, 8),
-					data: { message: 'Meeting every day 8 of the month' },
+					date: new Date(2013, 0, 20),
+					data: { titulo: 'Campeonato de Lorem Ipsum', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi mi, bibendum non facilisis sit amet, malesuada nec nibh. Vestibulum elementum urna a magna dignissim rhoncus' },
 					repeatMonth: true
 				},
 				{
-					date: new Date(0, 0, 1),
-					data: { message: 'Happy New Year!' },
+					date: new Date(0, 5, 10),
+					data: { titulo: 'Campeonato de Judo', descricao: 'Lorem ipsum' },
 					repeatYear: true
 				},
+				{
+					date: new Date(2013, 6, 12),
+					data: { titulo: 'Campeonato de Karate', descricao: 'Lorem ipsum' },
+				},
 			],
-			onClick: function(target, cell, date, data) {
-				target.val(date.getFullYear() + ' - ' +
-							date.getMonth() + ' - ' +
-							date.getDate());
 
-				if(data != null) {
-					alert(data.message + '\n' + date);
+			// Exibe a descrição do evento, em baixo da calendario.
+			onClick: function(target, cell, date, data) {
+				if(data != null ) {
+					$('#calendario #descricao-evento').fadeOut( function() {
+						$(this).remove();
+					});
+					descricao = '\
+						<div id="descricao-evento">\
+							<span class="data">'+date.getDate()+' de '+monthNames[date.getMonth()]+' de '+date.getFullYear()+'</span>\
+							<strong class="titulo">'+data.titulo+'</strong>\
+							<p>'+data.descricao+'</p>\
+						</div>';
+						$('#calendario').append(descricao);
+						$('#calendario #descricao-evento').hide().fadeIn();
+				} else {
+					$('#calendario #descricao-evento').fadeOut( function() {
+						$(this).remove();
+					});
 				}
 			}
 		});
+
+		$('#calendario .special').click()
 	}
 
 

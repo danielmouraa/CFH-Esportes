@@ -586,10 +586,11 @@ input.botao_a {
 	width: 358px;
 }
 
-/*Agenda*/
+/*Calendario*/
 
-#agenda {
-	width: 490px;
+#calendario {
+	width: 480px;
+	height: 700px;
 }
 
 /* Image Replacement */

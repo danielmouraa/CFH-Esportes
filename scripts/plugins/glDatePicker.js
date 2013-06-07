@@ -329,7 +329,7 @@
 							width: (cellWidth * maxCol) + 'px'
 						});
 
-					$('body').append(calendar);
+					$('#calendario').append(calendar);
 				}
 				else {
 					if(!eval(calendar.data('is'))) {
@@ -605,7 +605,7 @@
 								// Handle today or selected dates
 								if(firstDateMonth != cellDateVal.month) { cellClass += ' outday'; }
 								if(todayTime == cellDateTime) { cellClass = 'today'; cellZIndex += 50; }
-								if(options.selectedDate._time() == cellDateTime) { cellClass = 'selected'; cellZIndex += 51; }
+								if(options.selectedDate._time() == cellDateTime) { cellClass += ' selected'; cellZIndex += 51; }
 
 								// Handle special dates
 								if(options.specialDates) {
@@ -613,9 +613,12 @@
 										var vDate = getRepeatDate(v, v.date);
 
 										if(vDate.time == cellDateTime) {
-											cellClass = (v.cssClass || 'special');
+											cellClass += (v.cssClass || ' special');
 											cellZIndex += 52;
 											specialData = v.data;
+										}
+										if(vDate.time == cellDateTime && firstDateMonth != cellDateVal.month) {
+											cellClass = (v.cssClass || 'special outday');
 										}
 									});
 								}
@@ -704,20 +707,21 @@
 				var monthSelect = $('<select/>')
 									// .hide()
 									.change(onYearMonthSelect);
+									$("#calendario .outday").unbind("click");
 
 				// Build year selector
 				var yearSelect = $('<select/>')
 									// .hide()
 									.change(onYearMonthSelect);
-
+									$("#calendario .outday").unbind("click");
 				// Build month label
-				var monthText = $('<span/>')
-									.html(monthNames[firstDateMonth])
-									.mousedown(function() { return false; })
-									.click(function(e) {
-										e.stopPropagation();
-										toggleYearMonthSelect(false);
-									});
+				var monthText = $('<strong/>')
+									.html(monthNames[firstDateMonth]+" de "+firstDateYear)
+									// .mousedown(function() { return false; })
+									// .click(function(e) {
+									// 	e.stopPropagation();
+									// 	toggleYearMonthSelect(false);
+									// });
 
 				// Build year label
 				var yearText = $('<span/>')
@@ -747,10 +751,10 @@
 				});
 
 				var titleYearMonth = $('<div/>')
-										.append(monthText)
 										.append(monthSelect)
-										.append(yearText)
-										.append(yearSelect);
+										//.append(yearText)
+										.append(yearSelect)
+										.append(monthText);
 
 				// Add to title
 				titleCell.children().remove();

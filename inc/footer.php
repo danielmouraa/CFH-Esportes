@@ -22,7 +22,7 @@
 				// js.engatilhaModal();
 				js.navAbas();
 				<?php if ($data_page == 'agenda_eventos') { ?>
-				js.agendaEventos();
+				js.calendarioEventos();
 				<?php } ?>
 			})
 		</script>
