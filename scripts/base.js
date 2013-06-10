@@ -91,6 +91,22 @@ var js =
 		});
 
 		$('#calendario .special').click()
+	},
+
+	/**
+	 * Ativa o efeito de fade e troca no bloco de proximos eventos
+	 *
+	 * @return	false
+	 * @author	Daniel Moura
+	*/
+	carroselEventos: function() {
+		// $('#agenda .seta.proximo').click( function(){
+		// 	$('#agenda ul li').fadeOut( function(){
+		// 		$('#agenda ul li.ativo').prev().removeClass('anterior');
+		// 		$('#agenda ul li.ativo').removeClass('ativo').addClass('anterior').next().removeClass('proximo').addClass('ativo');
+		// 		$(this).fadeIn();
+		// 	});
+		// });
 	}
 
 

@@ -20,10 +20,11 @@
 		<script type="text/javascript">
 			$(window).load(function(){
 				// js.engatilhaModal();
-				js.navAbas();
+				//js.navAbas();
 				<?php if ($data_page == 'agenda_eventos') { ?>
 				js.calendarioEventos();
 				<?php } ?>
+				js.carroselEventos();
 			})
 		</script>
 	</body>
