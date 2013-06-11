@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-indent: -9999em;
 	overflow: hidden;
 	position: absolute;
+	z-index: 2;
 	top: 50%;
 	background: url(../images/ico/setas_b.png) no-repeat;
 }
@@ -193,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #agenda ul {
+	height: 200px;
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
@@ -201,12 +203,21 @@ h1, h2, h3, h4, h5, h6 {
 #agenda li {
 	width: 98px;
 	height: 143px;
+	display: none;
+	position: absolute;
+	margin-bottom: 20px;
 	padding-top: 55px;
 	float: left;
 	list-style: none;
 	text-align: center;
 	background: #EEE;
+	z-index: 1;
 	border: 1px solid #c6c6c6;
+}
+
+#agenda li .botao_a,
+#agenda li p {
+	display: none;
 }
 
 #agenda li.ativo {
@@ -217,6 +228,41 @@ h1, h2, h3, h4, h5, h6 {
 	border: none;
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
+}
+
+#agenda li.ativo .botao_a,
+#agenda li.ativo p {
+	display: none;
+}
+
+#agenda li.ativo,
+#agenda li.anterior,
+#agenda li.proximo,
+#agenda li.vazio {
+	display: block;
+}
+
+#agenda li.anterior {
+	left: 0;
+	top: 0;
+}
+
+#agenda li.proximo {
+	right: 0;
+	top: 0;
+}
+
+#agenda li.vazio {
+	z-index: 0;
+}
+
+#agenda li.vazio.ultimo {
+	right: 0;
+	top: 0;
+}
+
+#agenda li.ativo {
+	left: 100px;
 }
 
 #agenda li.anterior span {

@@ -94,19 +94,76 @@ var js =
 	},
 
 	/**
-	 * Ativa o efeito de fade e troca no bloco de proximos eventos
+	 * Faz o efeito de fade e troca no bloco de proximos eventos
 	 *
 	 * @return	false
 	 * @author	Daniel Moura
 	*/
 	carroselEventos: function() {
-		// $('#agenda .seta.proximo').click( function(){
-		// 	$('#agenda ul li').fadeOut( function(){
-		// 		$('#agenda ul li.ativo').prev().removeClass('anterior');
-		// 		$('#agenda ul li.ativo').removeClass('ativo').addClass('anterior').next().removeClass('proximo').addClass('ativo');
-		// 		$(this).fadeIn();
-		// 	});
-		// });
+		var $agenda = $('#agenda');
+
+		if( !$agenda.find('li.ativo').length ) {
+			$agenda.find('ul li').first().addClass('ativo');
+			$agenda.find('.seta.anterior').fadeOut();
+		}
+
+		var $eventoAtivo = $agenda.find('li.ativo'),
+			$proximoEvento = $eventoAtivo.next(),
+			$eventoAnterior = $eventoAtivo.prev(),
+			$setaAnterior = $agenda.find('.seta.anterior'),
+			$setaProximo = $agenda.find('.seta.proximo')
+
+		$eventoAnterior.addClass('anterior');
+		$proximoEvento.addClass('proximo');
+		$agenda.find('ul li').first().before('<li class="vazio primeiro"></li>')
+		$agenda.find('ul').append('<li class="vazio ultimo"></li>');
+
+		$setaAnterior.click( function(){
+			$eventoAnterior = $eventoAtivo.prev();
+
+			$agenda.find('ul').fadeOut( function(){
+				$eventoAnterior.addClass('ativo').removeClass('anterior');
+				$eventoAtivo.removeClass('ativo').addClass('proximo');
+				$eventoAtivo.siblings('.proximo').removeClass('proximo');
+				$eventoAtivo = $eventoAnterior;
+				$eventoAtivo.prev().addClass('anterior');
+
+				$setaProximo.fadeIn();
+				if ($eventoAnterior.prev().hasClass('vazio')) {
+					$setaAnterior.fadeOut();
+				}
+				$(this).fadeIn();
+			});
+		});
+
+		$setaProximo.click( function(){
+			$proximoEvento = $eventoAtivo.next();
+
+			$agenda.find('ul').fadeOut( function(){
+				$proximoEvento.addClass('ativo').removeClass('proximo');
+				$eventoAtivo.siblings('.anterior').removeClass('anterior');
+				$eventoAtivo.removeClass('ativo').addClass('anterior');
+				$eventoAtivo = $proximoEvento;
+				$eventoAtivo.next().addClass('proximo');
+
+				$setaAnterior.fadeIn();
+				if ($proximoEvento.next().hasClass('vazio')) {
+					$setaProximo.fadeOut();
+				}
+				$(this).fadeIn();
+			});
+		});
+	},
+
+	/**
+	 * Faz o efeito de carrossel no destaque principal da home
+	 *
+	 * @return	false
+	 * @author	Daniel Moura
+	*/
+	carroselHome: function() {
+
+
 	}
 
 
