@@ -182,4 +182,10 @@
 						</div>
 					<?php } ?>
 
+					<?php if ( $data_page == "agenda_eventos" ) { ?>
+						<div class="bloco evento-proximo">
+							<h3>Próximo evento:</h3>
+						</div>
+					<?php } ?>
+
 					</aside>

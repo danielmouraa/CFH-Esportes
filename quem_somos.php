@@ -1,5 +1,5 @@
 <?php 
-	$data_page = 'modalidades_interna';
+	$data_page = 'quem_somos';
 	include("inc/header.php");
 ?>
 

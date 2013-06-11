@@ -335,3 +335,17 @@ body[data-page="dados_atletas"] .conteudo .post > article {
 body[data-page="dados_atletas"] #abas-topicos input[type="submit"] {
 	float: left;
 }
+
+/* -------------|
+/* - PAGE
+/* -- AGENDA EVENTOS
+/* ----- */
+
+body[data-page="agenda_eventos"] .share {
+	position: absolute;
+	right: 20px;
+}
+
+body[data-page="agenda_eventos"] #sidebar {
+	padding-top: 70px;
+}
