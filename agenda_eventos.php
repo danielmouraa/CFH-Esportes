@@ -5,7 +5,7 @@
 
 		<main>
 			<section class="conteudo">
-				<section class="post page">
+				<section class="post single">
 					<article>
 						<div class="titulo">
 							<h1>Agenda de Eventos</h1>

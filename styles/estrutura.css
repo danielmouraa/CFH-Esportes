@@ -4,10 +4,13 @@
 
 header {
 	margin-top: 5px;
+	position: relative;
+	overflow: visible;
+	z-index: 10;
 }
 
-header:before,
-header:after {
+body:before,
+body:after {
 	width: 100%;
 	height: 340px;
 	content: "";
@@ -18,7 +21,7 @@ header:after {
 	z-index: -1;
 }
 
-header:before {
+body:before {
 	background-image: -webkit-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -moz-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -o-linear-gradient(bottom, #3a5182, #5373b9);
@@ -26,7 +29,7 @@ header:before {
 	background-image: linear-gradient(to top, #3a5182, #5373b9);
 }
 
-header:after {
+body:after {
 	width: 1000px;
 	left: 50%;
 	margin-left: -500px;
@@ -73,15 +76,16 @@ header div.contato a:first-child {
 
 header #menu {
 	width: 100%;
-	height: 30px;
 	clear: both;
 }
 
 header #menu li {
 	height: 30px;
-	padding: 0 15px;
+	padding: 5px 15px;
+	position: relative;
 	float: left;
 	display: block;
+	color: #FFF;
 	line-height: 30px;
 	border-left: 1px solid #4b73a9;
 	border-right: 1px solid #466497;
@@ -92,15 +96,69 @@ header #menu li:first-child {
 	padding-left: 0;
 }
 
-header #menu li:last-child {
-	border-right: 0;
-	padding-right: 0;
+header #menu li a {
+	color: inherit;
+	font-size: 2.5em;
+	text-decoration: none;
+}
+header #menu li:hover,
+header #menu li.ativo {
+	color: #fcc22c;
 }
 
-header #menu li a {
-	color: #FFF;
-	font-size: 2.5em;
+header #menu li.submenu {
+	padding: 5px 8px 5px 15px;
 }
+
+header #menu li.submenu:hover {
+	background: #10516e;
+}
+
+header #menu li.submenu > a {
+	background: url("../images/ico/setas_c.png") no-repeat right 16px;
+	padding: 0 15px 0 0;
+}
+header #menu li.submenu.ativo > a {
+	background-position: right -4px;
+}
+header #menu li.submenu:hover > a {
+	background-position: right -40px;
+}
+
+header #menu li.submenu ul {
+	background: url(../images/bkg/garoto_submenu.png) no-repeat right bottom #10516e;
+	width: 205px;
+	padding: 15px 0 25px 15px;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+header #menu li.submenu ul li {
+	background: none;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	border: none;
+}
+
+header #menu li.submenu ul li:first-child {
+	border-top: none;
+}
+
+header #menu li.submenu ul li:hover {
+
+}
+
+header #menu li.submenu ul li a {
+	font-size: 20px;
+}
+
+header #menu li.submenu ul li.ativo a {
+
+}
+
 
 /* -------------|
 /* - CONTEUDO
@@ -213,12 +271,12 @@ main > .conteudo .post > article .listagem-posts li .ler-mais {
 /* - SIDEBAR
 /* ----- */
 
-main > .conteudo .post > #sidebar {
+#sidebar {
 	width: 280px;
 	float: right;
 }
 
-main > .conteudo .post > #sidebar .bloco {
+#sidebar .bloco {
 	width: 100%;
 	margin-bottom: 30px;
 	color: #4e4e4e;
@@ -226,7 +284,7 @@ main > .conteudo .post > #sidebar .bloco {
 	overflow: hidden;
 }
 
-main > .conteudo .post > #sidebar .bloco h3 {
+#sidebar .bloco h3 {
 	font-size: 3em;
 	color: #1f6385;
 	display: block;
@@ -234,39 +292,39 @@ main > .conteudo .post > #sidebar .bloco h3 {
 	font-weight: normal;
 }
 
-main > .conteudo .post > #sidebar .bloco h4 {
+#sidebar .bloco h4 {
 	font-size: 2em;
 	display: block;
 	color: inherit;
 }
 
-main > .conteudo .post > #sidebar .bloco p {
+#sidebar .bloco p {
 	color: inherit;
 	font-size: 1.5em;
 }
 
 /* BLOCO ESCOLHER MODALIDADE */
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .botao_a {
+#sidebar .bloco.escolher-modalidade > .botao_a {
 	margin-bottom: 50px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha {
+#sidebar .bloco.escolher-modalidade > .escolha {
 	padding: 20px 0 20px 20px;
 	border: 1px solid #adb4c2;
 	background: #e8eefb;
 }
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha > div {
+#sidebar .bloco.escolher-modalidade > .escolha > div {
 	clear: both;
 	margin-top: 15px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha > div:first-child {
+#sidebar .bloco.escolher-modalidade > .escolha > div:first-child {
 	margin: 0;
 }
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha label {
+#sidebar .bloco.escolher-modalidade > .escolha label {
 	width: 80px;
 	height: 22px;
 	float: left;
@@ -278,7 +336,7 @@ main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha label 
 	font-size: 12px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha select {
+#sidebar .bloco.escolher-modalidade > .escolha select {
 	width: 155px;
 	height: 20px;
 	font-size: 12px;
@@ -287,74 +345,129 @@ main > .conteudo .post > #sidebar > .bloco.escolher-modalidade > .escolha select
 
 /* BLOCO OUTRAS NOTÍCIAS */
 
-main > .conteudo .post > #sidebar > .bloco.outras-noticias > ul li {
+#sidebar .bloco.outras-noticias > ul li {
 	clear: both;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.outras-noticias > ul li .thumb {
+#sidebar .bloco.outras-noticias > ul li .thumb {
 	margin-right: 10px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.outras-noticias > ul li .thumb a {
+#sidebar .bloco.outras-noticias > ul li .thumb a {
 	width: 115px;
 	height: 84px;
 }
 
 /* BLOCO GALERIA DE FOTOS */
 
-main > .conteudo .post > #sidebar > .bloco.galeria-fotos li {
+#sidebar .bloco.galeria-fotos li {
 	margin: 0 9px 9px 0;
 }
 
-main > .conteudo .post > #sidebar > .bloco.galeria-fotos li.ultimo {
+#sidebar .bloco.galeria-fotos li.ultimo {
 	margin-right: 0;
 }
 
-main > .conteudo .post > #sidebar > .bloco.galeria-fotos li a {
+#sidebar .bloco.galeria-fotos li a {
 	width: 110px;
 	height: 75px;
 }
 
-main > .conteudo .post > #sidebar #agenda li.ativo {
+#sidebar #agenda li.ativo {
 	width: 160px;
 }
 
 /* BLOCO LOGIN */
 
-main > .conteudo .post > #sidebar > .bloco.login > p {
+#sidebar .bloco.login > p {
 	margin-bottom: 10px;
 	display: block;
 	font-size: 15px;
 	font-family: 'Futura Book';
 }
 
-main > .conteudo .post > #sidebar > .bloco.login input[type="text"] {
+#sidebar .bloco.login input[type="text"] {
 	width: 246px;
 }
 
 /* BLOCO MODALIDADES */
 
-main > .conteudo .post > #sidebar > .bloco.modalidades > ul li {
+#sidebar .bloco.modalidades > ul li {
 	clear: both;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidades > ul li h4 {
+#sidebar .bloco.modalidades > ul li h4 {
 	color: #1F6385;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidades > ul li .thumb {
+#sidebar .bloco.modalidades > ul li .thumb {
 	margin-right: 10px;
 }
 
-main > .conteudo .post > #sidebar > .bloco.modalidades > ul li .thumb a {
+#sidebar .bloco.modalidades > ul li .thumb a {
 	width: 115px;
 	height: 84px;
 }
 
+/* BLOCO EVENTO PROXIMO */
+
+#sidebar .bloco.evento-proximo {
+	display: none;
+}
+
+#sidebar .bloco.evento-proximo h3 {
+	color: #cc3333;
+}
+
+#sidebar .bloco.evento-proximo > div {
+	width: 288px;
+	padding: 10px 35px 20px;
+	list-style: none;
+	text-align: center;
+	background: #FFF;
+	border: 1px solid #dedede;
+}
+
+#sidebar .bloco.evento-proximo span {
+	display: block;
+	font-size: 15px;
+	color: #757575;
+	text-align: normal;
+}
+
+#sidebar .bloco.evento-proximo .data {
+	display: block;
+	font-size: 20px;
+	color: #c98a8a;
+	text-align: center;
+}
+
+#sidebar .bloco.evento-proximo .data strong {
+	font-size: 50px;
+	color: #d24d4d;
+}
+
+#sidebar .bloco.evento-proximo .title {
+	font-size: 30px;
+	color: #4f4f4f;
+}
+
+#sidebar .bloco.evento-proximo p {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 15px;
+	font-family: 'Futura';
+}
+
+#sidebar .bloco.evento-proximo .botao_a {
+	width: 105px;
+	display: block;
+	margin: 0 auto;
+}
 
 
 /* -------------|
