@@ -2,7 +2,7 @@
 
 					<?php if ( $data_page == "noticias" || $data_page == "modalidades" ) { ?>
 						<div class="bloco escolher-modalidade">
-							<a href="#this" title="Link para Lorem Ipsum" class="botao_a modalidades">Tabela completa de modalidades e horários</a>
+							<a href="modais/tabela_modalidades.php" class="botao_a modalidades abrir-modal">Tabela completa de modalidades e horários</a>
 							<h3>Escolha uma modalidade</h3>
 							<div class="escolha">
 								<div>
@@ -137,7 +137,7 @@
 								</li>
 							</ul>
 						</div>
-						<a href="#this" title="Link para Lorem Ipsum" class="botao_a modalidades">Tabela completa de modalidades e horários</a>
+						<a href="modais/tabela_modalidades.php" class="botao_a modalidades abrir-modal">Tabela completa de modalidades e horários</a>
 					<?php } ?>
 
 

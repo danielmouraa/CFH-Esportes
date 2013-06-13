@@ -20,7 +20,7 @@
 		<script type="text/javascript" src="scripts/base.js"></script>
 		<script type="text/javascript">
 			$(window).load(function(){
-				// js.engatilhaModal();
+				js.engatilhaModal();
 				js.dropdownMenu();
 				js.navAbas();
 				<?php if ($data_page == 'agenda_eventos') { ?>
