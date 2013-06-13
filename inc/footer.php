@@ -28,7 +28,7 @@
 				<?php } ?>
 				js.carroselEventos();
 				<?php if ($data_page == 'home') { ?>
-				js.carroselHome();
+				js.carrosselHome();
 				<?php } ?>
 			})
 		</script>

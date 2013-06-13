@@ -86,13 +86,13 @@
 									</div>
 								</li>
 							</ul>
-							<div>
+							<div class="formas-pagamento">
 								<strong>Formas de pagamento</strong>
 								<ul>
-									<li>BB</li>
-									<li>Boleto</li>
-									<li>MasterCard</li>
-									<li>Visa</li>
+									<li class="bancodobrasil">BB</li>
+									<li class="boleto">Boleto</li>
+									<li class="mastercard">MasterCard</li>
+									<li class="visa">Visa</li>
 								</ul>
 							</div>
 						</div>

@@ -349,3 +349,21 @@ body[data-page="agenda_eventos"] .share {
 body[data-page="agenda_eventos"] #sidebar {
 	padding-top: 70px;
 }
+
+/* -------------|
+/* - PAGE
+/* -- TRABALHE CONOSCO
+/* ----- */
+
+body[data-page="trabalhe_conosco"] form > input[type="submit"] {
+	float: left;
+}
+
+/* -------------|
+/* - PAGE
+/* -- CADASTRO ATLETAS
+/* ----- */
+
+body[data-page="cadastro_atletas"] #sidebar .bloco.login {
+	margin-top: 70px;
+}

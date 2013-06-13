@@ -7,22 +7,8 @@
 			<section id="destaque-home">
 				<ul>
 					<li><a href="#this"><img src="images/dtq/destaque-01.png" alt="" /></a></li>
-					<li><a href="#this"><img src="images/dtq/destaque-01.png" alt="" /></a></li>
+					<li><a href="#this"><img src="images/dtq/destaque-02.png" alt="" /></a></li>
 				</ul>
-				<nav class="setas">
-					<a href="#this" class="anterior image-replace">Anterior</a>
-					<a href="#this" class="proximo image-replace">Próximo</a>
-				</nav>
-				<nav class="paginacao">
-					<div class="alinhamento">
-						<ul>
-							<li class="ativo"><a href="#this">1</a></li>
-							<li><a href="#this">2</a></li>
-							<li><a href="#this">3</a></li>
-							<li><a href="#this">4</a></li>
-						</ul>
-					</div>
-				</nav>
 			</section>
 			<section class="conteudo">
 				<section>
@@ -39,27 +25,27 @@
 					<ul class="listagem-posts">
 						<li>
 							<div class="thumb">
-								<a href="#this"><img src="images/fke/2.jpg" height="84" width="115" alt="" /></a>
+								<a href="noticias_interna.php"><img src="images/fke/2.jpg" height="84" width="115" alt="" /></a>
 							</div>
-							<h4><a href="#this">Apresentaçao do jardim 1</a></h4>
+							<h4><a href="noticias_interna.php">Apresentaçao do jardim 1</a></h4>
 							<p>Lorem ipsum dolor sit amet</p>
 						</li>
 						<li>
 							<div class="thumb">
-								<a href="#this"><img src="images/fke/3.jpg" height="84" width="115" alt="" /></a>
+								<a href="noticias_interna.php"><img src="images/fke/3.jpg" height="84" width="115" alt="" /></a>
 							</div>
-							<h4><a href="#this">Campeonato de Basquete 2012</a></h4>
+							<h4><a href="noticias_interna.php">Campeonato de Basquete 2012</a></h4>
 							<p>Lorem ipsum dolor sit amet</p>
 						</li>
 						<li>
 							<div class="thumb">
-								<a href="#this"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
+								<a href="noticias_interna.php"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
 							</div>
-							<h4><a href="#this">Street dance</a></h4>
+							<h4><a href="noticias_interna.php">Street dance</a></h4>
 							<p>Lorem ipsum dolor sit amet</p>
 						</li>
 					</ul>
-					<a href="#this" class="todos-eventos">Lista completa de eventos</a>
+					<a href="noticias.php" class="todos-eventos">Lista completa de eventos</a>
 				</section>
 				<aside>
 					<h2>Próximos eventos:</h2>
@@ -100,23 +86,23 @@
 						<ul class="listagem-posts">
 							<li>
 								<div class="thumb">
-									<a href="#this"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
+									<a href="modalidades_interna.php"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
 								</div>
-								<h4><a href="#this">Street dance</a></h4>
+								<h4><a href="modalidades_interna.php">Street dance</a></h4>
 								<p>Lorem ipsum dolor sit amet</p>
 							</li>
 							<li>
 								<div class="thumb">
-									<a href="#this"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
+									<a href="modalidades_interna.php"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
 								</div>
-								<h4><a href="#this">Street dance</a></h4>
+								<h4><a href="modalidades_interna.php">Street dance</a></h4>
 								<p>Lorem ipsum dolor sit amet</p>
 							</li>
 							<li>
 								<div class="thumb">
-									<a href="#this"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
+									<a href="modalidades_interna.php"><img src="images/fke/4.jpg" height="84" width="115" alt="" /></a>
 								</div>
-								<h4><a href="#this">Street dance</a></h4>
+								<h4><a href="modalidades_interna.php">Street dance</a></h4>
 								<p>Lorem ipsum dolor sit amet</p>
 							</li>
 						</ul>

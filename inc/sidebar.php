@@ -142,30 +142,32 @@
 
 
 					<?php if ( $data_page == "modalidades_interna" ) { ?>
-						<div id="agenda" class="bloco proximos-eventos">
+						<div class="bloco proximos-eventos">
 							<h3>Próximos eventos de Judô</h3>
-							<a href="#this" class="seta anterior">Anterior</a>
-							<ul>
-								<li>
-									<span class="data"><strong>15</strong>/12/2012</span>
-									<span class="title">Campeonato lorem ipsum</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
-									<a href="#this" class="botao_a">Inscreva-se já!</a>
-								</li>
-								<li class="ativo">
-									<span class="data"><strong>18</strong>/12/2012</span>
-									<span class="title">Campeonato lorem ipsum</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
-									<a href="#this" class="botao_a">Inscreva-se já!</a>
-								</li>
-								<li>
-									<span class="data"><strong>28</strong>/02/2013</span>
-									<span class="title">Campeonato lorem ipsum</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.</p>
-									<a href="#this" class="botao_a">Inscreva-se já!</a>
-								</li>
-							</ul>
-							<a href="#this" class="seta proximo">Próximo</a>
+							<div id="agenda">
+								<a href="#this" class="seta anterior">Anterior</a>
+								<ul>
+									<li>
+										<span class="data"><strong>15</strong>/12/2012</span>
+										<span class="title">Campeonato lorem ipsum</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+										<a href="#this" class="botao_a">Inscreva-se já!</a>
+									</li>
+									<li class="ativo">
+										<span class="data"><strong>18</strong>/12/2012</span>
+										<span class="title">Campeonato lorem ipsum</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+										<a href="#this" class="botao_a">Inscreva-se já!</a>
+									</li>
+									<li>
+										<span class="data"><strong>28</strong>/02/2013</span>
+										<span class="title">Campeonato lorem ipsum</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+										<a href="#this" class="botao_a">Inscreva-se já!</a>
+									</li>
+								</ul>
+								<a href="#this" class="seta proximo">Próximo</a>
+							</div>
 						</div>
 					<?php } ?>
 

@@ -96,6 +96,10 @@ header #menu li:first-child {
 	padding-left: 0;
 }
 
+header #menu li:last-child {
+	border-right: 0;
+}
+
 header #menu li a {
 	color: inherit;
 	font-size: 2.5em;
@@ -469,6 +473,15 @@ main > .conteudo .post > article .listagem-posts li .ler-mais {
 	margin: 0 auto;
 }
 
+/* BLOCO AGENDA */
+
+#sidebar #agenda {
+	position: relative;
+}
+
+#sidebar #agenda .title {
+	line-height: 23px;
+}
 
 /* -------------|
 /* - RODAPE

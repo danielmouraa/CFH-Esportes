@@ -29,7 +29,7 @@
 			</div>
 			<div class="contato">
 				<a href="contato.php">Fale com a gente</a>
-				<a href="#this">Trabalhe conosco</a>
+				<a href="trabalhe_conosco.php">Trabalhe conosco</a>
 			</div>
 			<nav id="menu">
 				<ul>
@@ -44,6 +44,7 @@
 							<li><a href="modalidades_interna.php">Natação</a></li>
 						</ul>
 					</li>
+					<li <?php echo ($data_page == "noticias" || $data_page == "noticias_interna") ? 'class="ativo"' : '' ?>><a href="noticias.php">Notícias</a></li>
 					<li <?php echo ($data_page == "agenda_eventos") ? 'class="ativo"' : '' ?>><a href="agenda_eventos.php">Agenda de eventos</a></li>
 					<li <?php echo ($data_page == "cadastro_atletas") ? 'class="ativo"' : '' ?>><a href="cadastro_atletas.php">Cadastro de atletas</a></li>
 				</ul>

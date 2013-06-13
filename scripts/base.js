@@ -189,7 +189,42 @@ var js =
 				$(this).fadeIn();
 			});
 		});
-	}
+	},
 
+	carrosselHome: function() {
+		console.log('carrosse');
+		if ( $("#destaque-home").size() ) {
+			js.paginacaoCarrossel($("#destaque-home"));
+
+			$("#destaque-home > ul").cycle({
+				fx: "scrollHorz",
+				speed: 600,
+				timeout: 0,
+				next: '#destaque-home .proximo',
+				prev: '#destaque-home .anterior',
+				pager: "#destaque-home .paginacao ul",
+				pagerAnchorBuilder: function(idx, slide) { 
+					return '<li><a href="#">'+ idx +'</a></li>';
+				},
+				activePagerClass: "ativo"
+			});
+		}
+	},
+
+	paginacaoCarrossel: function(alvo, adicional)
+	{
+		var paginacao = '\
+			<nav class="setas">\
+				<a href="#this" class="anterior image-replace">Anterior</a>\
+				<a href="#this" class="proximo image-replace">Próximo</a>\
+			</nav>\
+			<nav class="paginacao">\
+				<div class="alinhamento">\
+					<ul>\
+					</ul>\
+				</div>\
+			</nav>';
+		$(alvo).append(paginacao);
+	}
 
 }

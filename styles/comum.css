@@ -503,7 +503,8 @@ form > div textarea {
 }
 
 .planos-pagamento > div {
-	width: 200px;
+	width: 160px;
+	margin-top: 35px;
 	float: right;
 }
 
@@ -543,6 +544,50 @@ form > div textarea {
 	font-family: 'Futura';
 }
 
+/*Formas Pagamento*/
+
+.formas-pagamento strong {
+	display: block;
+	font-family: 'Futura Bold' !important;
+	margin-bottom: 10px;
+	font-size: 12px !important;
+	font-weight: normal;
+}
+
+.formas-pagamento ul li {
+	width: 48px;
+	height: 32px;
+	margin: 0 10px 10px 0;
+	text-indent: -9999em;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+
+.formas-pagamento ul {
+	width: 120px;
+	padding: 0 !important;
+}
+
+.formas-pagamento ul li.bancodobrasil {
+	background: url(../images/ico/bancodobrasil.png) no-repeat;
+}
+
+.formas-pagamento ul li.boleto {
+	background: url(../images/ico/boleto.png) no-repeat;
+}
+
+.formas-pagamento ul li.mastercard {
+	background: url(../images/ico/mastercard.png) no-repeat;
+}
+
+.formas-pagamento ul li.visa {
+	background: url(../images/ico/visa.png) no-repeat;
+}
+
+.formas-pagamento ul li:hover {
+	background-position: center bottom;
+}
 
 /* Thumbs */
 
