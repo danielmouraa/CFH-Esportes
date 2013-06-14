@@ -136,8 +136,8 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								</li>
 							</ul>
+							<a href="modais/tabela_modalidades.php" class="botao_a modalidades abrir-modal">Tabela completa de modalidades e horários</a>
 						</div>
-						<a href="modais/tabela_modalidades.php" class="botao_a modalidades abrir-modal">Tabela completa de modalidades e horários</a>
 					<?php } ?>
 
 

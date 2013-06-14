@@ -417,6 +417,10 @@ main > .conteudo .post > article .listagem-posts li .ler-mais {
 	height: 84px;
 }
 
+#sidebar .bloco.modalidades .botao_a {
+	width: 240px;
+}
+
 /* BLOCO EVENTO PROXIMO */
 
 #sidebar .bloco.evento-proximo {

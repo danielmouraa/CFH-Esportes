@@ -42,19 +42,76 @@ footer {
 /* Modais */
 
 .modal {
+	width: 565px;
+	padding: 30px 40px;
 	display: none;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	background: #FFF;
+	z-index: 50;
+	border: 1px solid #adb4c2;
+	background: #e8eefb;
 }
 
-#exemplo {
-	width: 500px;
-	height: 500px;
-	padding: 40px;
+.modal .fechar-modal {
+	width: 39px;
+	height: 39px;
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	background: url(../images/ico/fechar_modal.png) no-repeat;
 }
 
+#tabela-modalidades {
+	height: 600px;
+}
+
+#tabela-modalidades .titulo {
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+	clear: both;
+}
+
+#tabela-modalidades .titulo h3 {
+	font-size: 32px;
+	color: #3a5182;
+	display: block;
+	float: left;
+}
+
+#tabela-modalidades .titulo .escolha {
+	width: 315px;
+	float: right;
+}
+
+#tabela-modalidades .titulo .escolha > div {
+	margin: 9px 0 0 20px;
+	float: left;
+}
+
+#tabela-modalidades .titulo .escolha > div:first-child {
+	margin-left: 0;
+}
+
+#tabela-modalidades .titulo .escolha > div select {
+	width: 145px;
+	height: 20px;
+	font-size: 12px;
+	border: 1px solid #989898;
+}
+
+#tabela-modalidades .dias-horarios {
+	height: 540px;
+	padding-right: 10px;
+	overflow: auto;
+	clear: both;
+}
+
+#tabela-modalidades .dias-horarios table {
+	margin-bottom: 30px;
+}
 
 #fundo {
 	width: 100%;
@@ -510,35 +567,41 @@ form > div textarea {
 
 /*Tabela dias/horarios*/
 
-.post > article .dias-horarios p {
+.dias-horarios p {
 	margin-bottom: 0;
 }
 
-.post > article .dias-horarios table {
+.dias-horarios table {
 	width: 100%;
 	border-collapse: collapse;
 	font-family: 'Futura Book';
 }
 
-.post > article .dias-horarios table tr {
+.dias-horarios table tr {
 	height: 50px;
 	border-top: 2px solid #4e4e4e;
 }
 
-.post > article .dias-horarios table tr:first-child {
+.dias-horarios table tr:first-child {
 	border: none;
 }
 
-.post > article .dias-horarios table td {
+.dias-horarios table td {
 	font-size: 13px;
 	text-align: center;
 }
 
-.post > article .dias-horarios table td:first-child {
+.dias-horarios table td:first-child {
 	text-align: left;
 }
 
-.post > article .dias-horarios table strong {
+.dias-horarios table span {
+	font-size: 18px;
+	color: #884573;
+	font-family: 'Futura Bold';
+}
+
+.dias-horarios table strong {
 	display: block;
 	font-size: 15px;
 	font-family: 'Futura';

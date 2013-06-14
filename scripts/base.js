@@ -1,6 +1,9 @@
 $(function()
 {
 	js.init();
+	// if ( $('.modal').is('visible') ){
+	// 	$
+	// }
 });
 
 var js =
@@ -241,62 +244,60 @@ var js =
 	},
 
 	abrirModal: function(modalUrl){
+		$('.modal').remove();
+		$('#fundo').remove();
 
-		var $modalID = $("#exemplo");
+		$.ajax({
+			url: modalUrl,
+			beforeSend: function(){
+				$('<div id="fundo"></div>').appendTo($("body")).fadeIn();
+			},
+			error: function(jqXHR, textStatus, errorThrown){
+				console.log("ERROR: ", jqXHR, textStatus, errorThrown);
+				$("#fundo").fadeOut();
+			},
+			success: function(response){
+				var $resp = $(response);
+				var alturaFundo = $(window).height();
+				var larguraFundo = $(window).width();
 
-		$modalID.length
-			? $("#fundo").add($modalID).fadeIn()
-			: $.ajax({
-				url: modalUrl,
-				beforeSend: function(){
-					$('<div id="fundo"></div>').appendTo($("body")).fadeIn();
-				},
-				error: function(jqXHR, textStatus, errorThrown){
-					console.log("ERROR: ", jqXHR, textStatus, errorThrown);
-					$("#fundo").fadeOut();
-				},
-				success: function(response){
-					var $resp = $(response);
-					var alturaFundo = $(window).height();
-					var larguraFundo = $(window).width();
+				$resp.appendTo($("body"));
 
-					$resp.appendTo($("body"));
+				var alturaModal = $resp.outerHeight();
+				var larguraModal = $resp.outerWidth();
 
-					var alturaModal = $resp.outerHeight();
-					var larguraModal = $resp.outerWidth();
+				$resp.css({
+					marginTop: "-"+ alturaModal / 2 +"px",
+					marginLeft: "-"+ larguraModal / 2 +"px"
+				}).fadeIn();
 
-					$resp.css({
-						marginTop: "-"+ alturaModal / 2 +"px",
-						marginLeft: "-"+ larguraModal / 2 +"px"
-					}).fadeIn();
+				// Verifica se a modal é menor do que a tela, se for a modal deixa de ser fixa
+				if ( alturaFundo <= alturaModal || larguraFundo <= larguraModal ) {
 
-					// Verifica se a modal é menor do que a tela, se for a modal deixa de ser fixa
-					if ( alturaFundo <= alturaModal || larguraFundo <= larguraModal ) {
+					js.reajustarModal($resp);
 
+					// Ajusta a posicao da modal quando a tela é redimensionada
+					$(window).resize(function()
+					{
 						js.reajustarModal($resp);
+					});
 
-						// Ajusta a posicao da modal quando a tela é redimensionada
-						$(window).resize(function()
-						{
-							js.reajustarModal($resp);
-						});
+				}
 
-					}
+				// Fecha a modal
+				$(".fechar-modal", $resp).add("#fundo").click(function(){
+					$("#fundo").fadeOut();
+					$resp.fadeOut();
+				});
 
-					// Fecha a modal
-					$(".fechar-modal", $resp).add("#fundo").click(function(){
+				$('html').keyup(function(e){
+					if (e.keyCode == 27) {
 						$("#fundo").fadeOut();
 						$resp.fadeOut();
-					});
-
-					$('html').keyup(function(e){
-						if (e.keyCode == 27) {
-							$("#fundo").fadeOut();
-							$resp.fadeOut();
-						}
-					});
-				}
-			});
+					}
+				});
+			}
+		});
 	},
 
 	reajustarModal: function(alvo) {
