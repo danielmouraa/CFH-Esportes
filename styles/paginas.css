@@ -137,7 +137,7 @@ body[data-page="home"] main > .conteudo > section .destaque .bola {
 	position: absolute;
 	top: -15px;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	background: url(../images/ico/bola.png) no-repeat;
 }
 
@@ -152,6 +152,7 @@ body[data-page="home"] main > .conteudo > section .destaque .thumb {
 	height: 225px;
 	overflow: hidden;
 	position: relative;
+	z-index: 2;
 	border: 2px solid #FFF;
 
 	-webkit-box-shadow: 0 0 2px #666;
@@ -189,6 +190,7 @@ body[data-page="home"] main > .conteudo .listagem-posts li {
 
 body[data-page="home"] main > .conteudo .listagem-posts .thumb {
 	margin-right: 10px;
+	position: relative;
 }
 
 body[data-page="home"] main > .conteudo .listagem-posts h4 {

@@ -22,6 +22,8 @@ body:after {
 }
 
 body:before {
+	behavior: url(PIE.htc);
+
 	background-image: -webkit-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -moz-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -o-linear-gradient(bottom, #3a5182, #5373b9);
