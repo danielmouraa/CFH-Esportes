@@ -196,6 +196,10 @@ body[data-page="home"] main > .conteudo .listagem-posts h4 {
 	color: #1f6385;
 }
 
+body[data-page="home"] main > .conteudo .listagem-posts h4 a {
+	color: #1f6385;
+}
+
 body[data-page="home"] main > .conteudo .listagem-posts p {
 	font-family: 'Futura';
 	font-size: 15px;
@@ -248,6 +252,7 @@ body[data-page="home"] main > .conteudo > aside .post-destaque > div {
 	color: #FFF;
 	overflow: hidden;
 	position: absolute;
+	left: 0;
 	bottom: 0;
 	border-radius: 0px 0px 3px 3px;
 }

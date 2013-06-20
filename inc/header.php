@@ -5,7 +5,8 @@
 		<title>CFH Esportes</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<meta name="author" content="http://www.talk2.com.br" />
+		<meta name="author" content="http://br.linkedin.com/pub/daniel-moura/28/980/8b9" />
+
 		<link rel="shortcut icon" href="images/ico/favicon.ico" type="image/x-icon" />
 		<link type="text/css" rel="stylesheet" href="styles/comum.css" media="screen" />
 		<link type="text/css" rel="stylesheet" href="styles/estrutura.css" media="screen" />
@@ -15,6 +16,7 @@
 		<link type="text/css" rel="stylesheet" href="styles/fonts.css" media="screen" />
 		<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="styles/ie7.css" media="screen" /><![endif]-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
 
 		<body data-role="<?php if( isset($data_page) && $data_page == "home" ) { echo "home"; } else { echo "internas"; } ?>" data-page="<?php if(isset($data_page)) { echo $data_page; } ?>">

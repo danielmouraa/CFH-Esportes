@@ -1,9 +1,6 @@
 $(function()
 {
 	js.init();
-	// if ( $('.modal').is('visible') ){
-	// 	$
-	// }
 });
 
 var js =
@@ -73,7 +70,7 @@ var js =
 			// Adiciona os eventos
 			specialDates: [
 				{
-					date: new Date(2013, 0, 20),
+					date: new Date(2013, 0, 23),
 					data: { titulo: 'Campeonato de Lorem Ipsum', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu ac.', link_inscricao: '#this' },
 					repeatMonth: true
 				},
@@ -84,8 +81,8 @@ var js =
 				},
 				{
 					date: new Date(2013, 6, 12),
-					data: { titulo: 'Campeonato de Karate', descricao: 'Lorem ipsum', link_inscricao: '#this' },
-				},
+					data: { titulo: 'Campeonato de Karate', descricao: 'Lorem ipsum', link_inscricao: '#this' }
+				}
 			],
 
 			// Exibe a descrição do evento, em baixo da calendario.
@@ -195,7 +192,6 @@ var js =
 	},
 
 	carrosselHome: function() {
-		console.log('carrosse');
 		if ( $("#destaque-home").size() ) {
 			js.paginacaoCarrossel($("#destaque-home"));
 

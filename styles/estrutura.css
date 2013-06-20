@@ -151,16 +151,8 @@ header #menu li.submenu ul li:first-child {
 	border-top: none;
 }
 
-header #menu li.submenu ul li:hover {
-
-}
-
 header #menu li.submenu ul li a {
 	font-size: 20px;
-}
-
-header #menu li.submenu ul li.ativo a {
-
 }
 
 
@@ -230,6 +222,10 @@ main > .conteudo .post > article h1 strong {
 	font-family: inherit;
 }
 
+main > .conteudo .post > article .listagem-posts ul {
+	list-style: none;
+}
+
 main > .conteudo .post > article .listagem-posts li {
 	width: 100%;
 	color: #4e4e4e;
@@ -247,12 +243,13 @@ main > .conteudo .post > article .listagem-posts li .thumb a {
 }
 
 main > .conteudo .post > article .listagem-posts li h2 {
-	margin-top: 8px;
+	margin: 8px 0 3px;
 	font-size: 2.5em;
 	font-family: 'Futura Medium';
 }
 
 main > .conteudo .post > article .listagem-posts li h2 a {
+	font-size: inherit;
 	color: inherit;
 }
 

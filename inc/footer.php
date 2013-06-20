@@ -17,6 +17,7 @@
 		<script type="text/javascript" src="scripts/plugins/lightbox.js"></script>
 		<script type="text/javascript" src="scripts/plugins/glDatePicker.js"></script>
 		<script type="text/javascript" src="scripts/plugins/jquery.cycle.js"></script>
+		<script type="text/javascript" src="scripts/plugins/PIE.js"></script>
 		<script type="text/javascript" src="scripts/base.js"></script>
 		<script type="text/javascript">
 			$(window).load(function(){

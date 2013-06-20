@@ -1,0 +1,53 @@
+header #menu li a {
+	color: #FFF;
+}
+
+header #menu li:hover a,
+header #menu li.ativo a,
+header #menu li.submenu ul li:hover a {
+	color: #fcc22c;
+}
+
+header #menu li.submenu ul li a {
+	color: #FFF;
+}
+
+main {
+	margin-bottom: 30px !important;
+}
+
+main > .conteudo > section,
+main > .conteudo > aside {
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+
+main > .conteudo > section {
+	background: none #FFF !important;
+}
+
+body[data-page="home"] main > .conteudo > section {
+	background: none #EEE !important;
+}
+
+body[data-role="internas"] main > .conteudo {
+	margin-top: 50px;
+}
+
+body[data-role="internas"] main > .conteudo .post {
+	margin-top: 0;
+}
+
+main > .conteudo .post > article .listagem-posts li h2 a {
+	font-size: 25px;
+	color: #4E4E4E;
+}
+
+#sidebar .bloco h4 a {
+	color: #4E4E4E;
+}
+
+footer {
+	padding-bottom: 30px !important;
+}

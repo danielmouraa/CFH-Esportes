@@ -5,8 +5,12 @@
   left: 0;
   z-index: 9999;
   background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
-  opacity: 0.85;
+/*  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;*/
+  filter: alpha(opacity=85); /* internet explorer */
+  -khtml-opacity: 0.85;      /* khtml, old safari */
+  -moz-opacity: 0.85;       /* mozilla, netscape */
+  opacity: 0.85;           /* fx, safari, opera */
   display: none;
 }
 
