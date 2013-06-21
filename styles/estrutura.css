@@ -22,8 +22,6 @@ body:after {
 }
 
 body:before {
-	behavior: url(PIE.htc);
-
 	background-image: -webkit-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -moz-linear-gradient(bottom, #3a5182, #5373b9);
 	background-image: -o-linear-gradient(bottom, #3a5182, #5373b9);
@@ -474,6 +472,11 @@ main > .conteudo .post > article .listagem-posts li .ler-mais {
 	width: 105px;
 	display: block;
 	margin: 0 auto;
+	position: relative;
+}
+
+#sidebar .proximos-eventos .botao_a {
+	position: relative;
 }
 
 /* BLOCO AGENDA */

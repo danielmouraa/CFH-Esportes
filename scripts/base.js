@@ -154,7 +154,12 @@ var js =
 		$agenda.find('ul li').first().before('<li class="vazio primeiro"></li>')
 		$agenda.find('ul').append('<li class="vazio ultimo"></li>');
 
+		var inClick = false;
 		$setaAnterior.click( function(){
+			if(inClick) return false;
+
+			inClick = true;
+
 			$eventoAnterior = $eventoAtivo.prev();
 
 			$agenda.find('ul').fadeOut( function(){
@@ -168,11 +173,17 @@ var js =
 				if ($eventoAnterior.prev().hasClass('vazio')) {
 					$setaAnterior.fadeOut();
 				}
-				$(this).fadeIn();
+				$(this).fadeIn( function(){
+					inClick = false;
+				});
 			});
 		});
 
 		$setaProximo.click( function(){
+			if(inClick) return false;
+
+			inClick = true;
+
 			$proximoEvento = $eventoAtivo.next();
 
 			$agenda.find('ul').fadeOut( function(){
@@ -186,7 +197,9 @@ var js =
 				if ($proximoEvento.next().hasClass('vazio')) {
 					$setaProximo.fadeOut();
 				}
-				$(this).fadeIn();
+				$(this).fadeIn( function(){
+					inClick = false;
+				});
 			});
 		});
 	},
